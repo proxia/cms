@@ -1,0 +1,41 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>blank_page</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script type="text/javascript">
+		var tinyMCE = parent.tinyMCE, css = tinyMCE.getParam("content_css").split(','), i, u;
+		alert(css);
+		// Load content CSS files
+		for (i=0; i<css.length; i++) {
+			u = css[i];
+
+			// Fix relative
+			if (u.charAt(0) != '/' && u.indexOf('://') == -1)
+				u = tinyMCE.documentBasePath + "/" + u;
+
+			document.write('<link href="' + u + '" rel="stylesheet" type="text/css" />');
+		}
+	</script>
+</head>
+<body id="mceTemplatePreview">
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+    <tbody>
+        <tr>
+            <td width="50%">
+            <h3>Title 1</h3>
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+            <td width="50%">
+            <h3>Title 2</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>Text 1</td>
+            <td>&nbsp;</td>
+            <td>Text 2</td>
+        </tr>
+    </tbody>
+</table>
+More text goes here.
+</body>
+</html>

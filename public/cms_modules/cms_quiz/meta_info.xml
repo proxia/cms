@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<mod_meta_info>
+
+	<section name="code">
+		<content language="independent">CMS_Quiz</content>
+	</section>
+
+	<section name="author">
+		<content language="independent"></content>
+	</section>
+
+	<section name="title">
+		<content language="sk">Testy</content>
+		<content language="en">Quizes</content>
+		<content language="hu">Tesztek</content>
+	</section>
+
+	<section name="description">
+		<content language="sk">Nejake testy</content>
+	</section>
+
+</mod_meta_info>

@@ -1,0 +1,17 @@
+docker/volumes
+templates/cache
+templates/templates_c
+mediafiles
+.idea
+config/config.php
+dump.sql
+
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
+/var/
+/vendor-new/
+###< symfony/framework-bundle ###

@@ -1,0 +1,757 @@
+# .
+# Copyright (C)
+# This file is distributed under the same license as the  package.
+#  <>, .
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0 \n"
+"POT-Creation-Date: 2006-04-25 15:41+0200\n"
+"PO-Revision-Date: 2006-04-25 15:41+0200\n"
+"Language-Team:  <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "There are loose data in table `%1$s` for `id` %2$s."
+msgstr "There are loose data in table `%1$s` for `id` %2$s."
+
+msgid "Can't move item out of boundry. Vector index: %1$s, New index: %2$s"
+msgstr "Can't move item out of boundry. Vector index: %1$s, New index: %2$s"
+
+msgid "Nové"
+msgstr "Nové"
+
+msgid "Uprav"
+msgstr "Uprav"
+
+msgid "Ukáž"
+msgstr "Ukáž"
+
+msgid "Ukry"
+msgstr "Ukry"
+
+msgid "Vymazať"
+msgstr "Vymazať"
+
+msgid "Pomocník"
+msgstr "Pomocník"
+
+msgid "Uložiť"
+msgstr "Uložiť"
+
+msgid "Použiť"
+msgstr "Použiť"
+
+msgid "Zrušiť"
+msgstr "Zrušiť"
+
+msgid "Nová téma"
+msgstr "Nová téma"
+
+msgid "Téma"
+msgstr "Téma"
+
+msgid "nezadali ste povinnú položku"
+msgstr "nezadali ste povinnú položku"
+
+msgid "Fórum manažér / Úprava fórumu"
+msgstr "Fórum manažér / Úprava fórumu"
+
+msgid "Detail fórumu"
+msgstr "Detail fórumu"
+
+msgid "Názov"
+msgstr "Názov"
+
+msgid "Popis"
+msgstr "Popis"
+
+msgid "Viditeľnosť"
+msgstr "Viditeľnosť"
+
+msgid "Nie"
+msgstr "Nie"
+
+msgid "Áno"
+msgstr "Áno"
+
+msgid "Zmazať tému"
+msgstr "Zmazať tému"
+
+msgid "Lektori"
+msgstr "Lektori"
+
+msgid "Zoznam používateľov"
+msgstr "Zoznam používateľov"
+
+msgid "Nevybrali ste žiadny záznam na spracovanie"
+msgstr "Nevybrali ste žiadny záznam na spracovanie"
+
+msgid "Pozor táto operácia je nevratná, vybrané položky sa navždy vymažú !!! Vymazať ?"
+msgstr "Pozor táto operácia je nevratná, vybrané položky sa navždy vymažú !!! Vymazať ?"
+
+msgid "Fórum manažér"
+msgstr "Fórum manažér"
+
+msgid "Názov fórumu"
+msgstr "Názov fórumu"
+
+msgid "Odpoveď"
+msgstr "Odpoveď"
+
+msgid "Fórum manažér / Nové fórum"
+msgstr "Fórum manažér / Nové fórum"
+
+msgid "Nová"
+msgstr "Nová"
+
+msgid "Nová odpoveď"
+msgstr "Nová odpoveď"
+
+msgid "Manažér ankiet / Úprava ankety"
+msgstr "Manažér ankiet / Úprava ankety"
+
+msgid "Detail ankety"
+msgstr "Detail ankety"
+
+msgid "Popis ankety"
+msgstr "Popis ankety"
+
+msgid "Ukáž výsledky"
+msgstr "Ukáž výsledky"
+
+msgid "Platnosť kliku"
+msgstr "Platnosť hlasu"
+
+msgid "bez obmedzenia"
+msgstr "bez obmedzenia"
+
+msgid "hodina"
+msgstr "hodina"
+
+msgid "deň"
+msgstr "deň"
+
+msgid "týždeň"
+msgstr "týždeň"
+
+msgid "mesiac"
+msgstr "mesiac"
+
+msgid "mesiace"
+msgstr "mesiace"
+
+msgid "mesiacov"
+msgstr "mesiacov"
+
+msgid "rok"
+msgstr "rok"
+
+msgid "nekonečne"
+msgstr "nekonečne"
+
+msgid "Otázka"
+msgstr "Otázka"
+
+msgid "Pozor táto operácia je nevratná, vybraná položka sa navždy vymaže !!! Vymazať ?"
+msgstr "Pozor táto operácia je nevratná, vybraná položka sa navždy vymaže !!! Vymazať ?"
+
+msgid "Manažér ankiet"
+msgstr "Manažér ankiet"
+
+msgid "Názov ankety"
+msgstr "Názov ankety"
+
+msgid "Počet otázok"
+msgstr "Počet otázok"
+
+msgid "Počet odpovedí"
+msgstr "Počet odpovedí"
+
+msgid "Manažér ankiet / Nová anketa"
+msgstr "Manažér ankiet / Nová anketa"
+
+msgid "Manažér kategórií"
+msgstr "Manažér kategórií"
+
+msgid "Do koša"
+msgstr "Do koša"
+
+msgid "Kopíruj"
+msgstr "Kopíruj"
+
+msgid "Názov kategórie"
+msgstr "Názov kategórie"
+
+msgid "ID kategórie"
+msgstr "ID kategórie"
+
+msgid "Aktívnych"
+msgstr "Aktívnych"
+
+msgid "Zmazaných"
+msgstr "Zmazaných"
+
+msgid "Skry"
+msgstr "Skry"
+
+msgid "Presuň"
+msgstr "Presuň"
+
+msgid "Nová kategória"
+msgstr "Nová kategória"
+
+msgid "Príliš dlhý text"
+msgstr "Príliš dlhý text"
+
+msgid "Príliš krátky text"
+msgstr "Príliš krátky text"
+
+msgid "Nezadali ste povinnú položku"
+msgstr "Nezadali ste povinnú položku"
+
+msgid "Nie je číslo"
+msgstr "Nie je číslo"
+
+msgid "Nie je email"
+msgstr "Nie je email"
+
+msgid "Nie je url"
+msgstr "Nie je url"
+
+msgid "Nie je zhodné heslo"
+msgstr "Nie je zhodné heslo"
+
+msgid "Detail kategórie"
+msgstr "Detail kategórie"
+
+msgid "Popis kategórie"
+msgstr "Popis kategórie"
+
+msgid "Úprava kategórie"
+msgstr "Úprava kategórie"
+
+msgid "Menu manažér"
+msgstr "Menu manažér"
+
+msgid "Názov menu"
+msgstr "Názov menu"
+
+msgid "Nové menu"
+msgstr "Nové menu"
+
+msgid "Title menu"
+msgstr "Title menu"
+
+msgid "Popis menu"
+msgstr "Popis menu"
+
+msgid "Detail menu"
+msgstr "Detail menu"
+
+msgid "Úprava menu"
+msgstr "Úprava menu"
+
+msgid "Domov"
+msgstr "Domov"
+
+msgid "Menu"
+msgstr "Menu"
+
+msgid "Stránka"
+msgstr "Stránka"
+
+msgid "Obsah"
+msgstr "Obsah"
+
+msgid "Moduly"
+msgstr "Moduly"
+
+msgid "Rýchlo"
+msgstr "Rýchlo"
+
+msgid "Manažér menu"
+msgstr "Manažér menu"
+
+msgid "Hlavné nastavenia"
+msgstr "Hlavné nastavenia"
+
+msgid "Kôš"
+msgstr "Kôš"
+
+msgid "Manažér médií"
+msgstr "Manažér médií"
+
+msgid "Manažér používateľov"
+msgstr "Manažér používateľov"
+
+msgid "Ukážka"
+msgstr "Ukážka"
+
+msgid "Manažér článkov"
+msgstr "Manažér článkov"
+
+msgid "Novinky"
+msgstr "Novinky"
+
+msgid "Úvodná stránka"
+msgstr "Úvodná stránka"
+
+msgid "Manažér odkazov"
+msgstr "Manažér odkazov"
+
+msgid "Archív manažér"
+msgstr "Archive manager"
+
+msgid "Manažér jazykov"
+msgstr "Manažér jazykov"
+
+msgid "Jazyk aplikácie"
+msgstr "Jazyk aplikácie"
+
+msgid "Prehľad kategórií"
+msgstr "Prehľad kategórií"
+
+msgid "Väzby kategórií"
+msgstr "Väzby kategórií"
+
+msgid "Prehľad menu"
+msgstr "Prehľad menu"
+
+msgid "Väzby menu"
+msgstr "Väzby menu"
+
+msgid "Zoznam článkov"
+msgstr "Zoznam článkov"
+
+msgid "Nový článok"
+msgstr "Nový článok"
+
+msgid "Zoznam kategórií"
+msgstr "Zoznam kategórií"
+
+msgid "Nový súbor"
+msgstr "Nový súbor"
+
+msgid "Informácie"
+msgstr "Informácie"
+
+msgid "Priradenie k menu"
+msgstr "Priradenie k menu"
+
+msgid "Priradenie ku kategórii"
+msgstr "Priradenie ku kategórii"
+
+msgid "Info"
+msgstr "Info"
+
+msgid "Priradiť k menu"
+msgstr "Priradiť k menu"
+
+msgid "Priradiť ku kategórii"
+msgstr "Priradiť ku kategórii"
+
+msgid "Prílohy"
+msgstr "Prílohy"
+
+msgid "Kategórie"
+msgstr "Kategórie"
+
+msgid "Články"
+msgstr "Články"
+
+msgid "Odkazy"
+msgstr "Odkazy"
+
+msgid "Nie je zhodnĂ© heslo"
+msgstr ""
+
+msgid "Nevybrali ste Ĺľiadny spĂ´sob platby"
+msgstr ""
+
+msgid "Nepriradené kategórie"
+msgstr "Nepriradené kategórie"
+
+msgid "Pridaj článok"
+msgstr "Pridaj článok"
+
+msgid "Pridaj obrázok"
+msgstr "Pridaj obrázok"
+
+msgid "Pridaj kategóriu"
+msgstr "Pridaj kategóriu"
+
+msgid "Nový"
+msgstr "Nový"
+
+msgid "Archív"
+msgstr "Archív"
+
+msgid "Obnoviť"
+msgstr "Obnoviť"
+
+msgid "Aktivuj"
+msgstr "Aktivuj"
+
+msgid "Deaktivuj"
+msgstr "Deaktivuj"
+
+msgid "Nový adresár"
+msgstr "Nový adresár"
+
+msgid "Nový riadok"
+msgstr "Nový riadok"
+
+msgid "Archív článkov"
+msgstr "Archív článkov"
+
+msgid "Názov článku"
+msgstr "Názov článku"
+
+msgid "ID článku"
+msgstr "ID článku"
+
+msgid "Nadradená kategória"
+msgstr "Nadradená kategória"
+
+msgid "Autor"
+msgstr "Autor"
+
+msgid "Dátum"
+msgstr "Dátum"
+
+msgid "po expirácii"
+msgstr "po expirácii"
+
+msgid "Manažér článkov / Úprava článku"
+msgstr "Manažér článkov / Úprava článku"
+
+msgid "Detail článku"
+msgstr "Detail článku"
+
+msgid "Popis článku"
+msgstr "Popis článku"
+
+msgid "Text článku"
+msgstr "Text článku"
+
+msgid "Detailné nastavenia"
+msgstr "Detailné nastavenia"
+
+msgid "Ukáž na úvodnej stránke"
+msgstr "Ukáž na úvodnej stránke"
+
+msgid "Viditeľnosť jazykovej verzie"
+msgstr "Viditeľnosť jazykovej verzie"
+
+msgid "Novinka"
+msgstr "Novinka"
+
+msgid "Flash novinka"
+msgstr "Flash novinka"
+
+msgid "Vytvorenie"
+msgstr "Vytvorenie"
+
+msgid "Platnosť"
+msgstr "Platnosť"
+
+msgid "Zobrazovacie&nbsp;práva"
+msgstr "Zobrazovacie práva"
+
+msgid "Verejné"
+msgstr "Verejné"
+
+msgid "Registrovaným"
+msgstr "Registrovaným"
+
+msgid "Skupiny používateľov"
+msgstr "Skupiny používateľov"
+
+msgid "vyberte menu"
+msgstr "Vyberte menu"
+
+msgid "Priraď k menu"
+msgstr "Priraď k menu"
+
+msgid "Zoznam priradení"
+msgstr "Zoznam priradení"
+
+msgid "Naozaj chcete vymazať väzbu článku s menu "
+msgstr "Naozaj chcete vymazať väzbu článku s menu "
+
+msgid "zmazať"
+msgstr "zmazať"
+
+msgid "vyberte kategóriu"
+msgstr "vyberte kategóriu"
+
+msgid "Priraď ku kategórii"
+msgstr "Priraď ku kategórii"
+
+msgid "Naozaj chcete vymazať väzbu článku s kategóriou "
+msgstr "Naozaj chcete vymazať väzbu článku s kategóriou "
+
+msgid "Príloha"
+msgstr "Príloha"
+
+msgid "vlož obrázok"
+msgstr "Vlož obrázok"
+
+msgid "Prilož prílohu"
+msgstr "Prilož prílohu"
+
+msgid "Naozaj chcete vymazať prílohu "
+msgstr "Naozaj chcete vymazať prílohu "
+
+msgid "filter"
+msgstr "filter"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "všetky kategórie"
+msgstr "všetky kategórie"
+
+msgid "Predchádzajúca stránka"
+msgstr "Predchádzajúca stránka"
+
+msgid "Ďalšia stránka"
+msgstr "Ďalšia stránka"
+
+msgid "Posledná stránka"
+msgstr "Posledná stránka"
+
+msgid "Manažér článkov / Nový článok"
+msgstr "Manažér článkov / Nový článok"
+
+msgid "Vyberte menu"
+msgstr "Vyberte menu"
+
+msgid "Vyberte kategóriu"
+msgstr "Vyberte kategóriu"
+
+msgid "Manažér kategórií / Úprava kategórie"
+msgstr "Manažér kategórií / Úprava kategórie"
+
+msgid "Naozaj chcete vymazať väzbu kategórie s menu "
+msgstr "Naozaj chcete vymazať väzbu kategórie s menu "
+
+msgid "Manažér kategórií / Prehľad kategórií"
+msgstr "Manažér kategórií / Prehľad kategórií"
+
+msgid "Manažér kategórií / Väzby kategórií"
+msgstr "Manažér kategórií / Väzby kategórií"
+
+msgid "VYBERTE SI KATEGÓRIU"
+msgstr "VYBERTE SI KATEGÓRIU"
+
+msgid "Poradie"
+msgstr "Poradie"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Typ záznamu"
+msgstr "Typ záznamu"
+
+msgid "posuň smerom dole"
+msgstr "posuň smerom dole"
+
+msgid "posuň smerom hore"
+msgstr "posuň smerom hore"
+
+msgid "TOP KATEGÓRIA"
+msgstr "TOP KATEGÓRIA"
+
+msgid "Manažér kategórií / Nová kategória"
+msgstr "Manažér kategórií / Nová kategória"
+
+msgid "Manažér jazykov / Úprava jazyka"
+msgstr "Manažér jazykov / Úprava jazyka"
+
+msgid "Detail jazyka"
+msgstr "Detail jazyka"
+
+msgid "Jazyk"
+msgstr "Jazyk"
+
+msgid "Názov jazyka"
+msgstr "Názov jazyka"
+
+msgid "Skratka jazyka"
+msgstr "Skratka jazyka"
+
+msgid "Globálna viditeľnosť"
+msgstr "Viditeľnosť na webe"
+
+msgid "Lokálna viditeľnosť"
+msgstr "Viditeľnosť jazyka obsahu"
+
+msgid "Manažér jazykov / Nový jazyk"
+msgstr "Manažér jazykov / Nový jazyk"
+
+msgid "Pozor táto operácia je nevratná, vybrané položky sa navždy vymažú!!! Vymazať ?"
+msgstr "Pozor táto operácia je nevratná, vybrané položky sa navždy vymažú!!! Vymazať ?"
+
+msgid "Veľkosť"
+msgstr "Veľkosť"
+
+msgid "Manažér médií / Nový súbor"
+msgstr "Manažér médií / Nový súbor"
+
+msgid "Cieľový adresár"
+msgstr "Cieľový adresár"
+
+msgid "Manažér médií / Nový adresár"
+msgstr "Manažér médií / Nový adresár"
+
+msgid "Nadradený adresár"
+msgstr "Nadradený adresár"
+
+msgid "Názov adresára"
+msgstr "Názov adresára"
+
+msgid "Manažér menu / Úprava menu"
+msgstr "Manažér menu / Úprava menu"
+
+msgid "Manažér menu / Prehľad menu"
+msgstr "Manažér menu / Prehľad menu"
+
+msgid "Manažér menu / Väzby menu"
+msgstr "Manažér menu / Väzby menu"
+
+msgid "VYBERTE SI MENU"
+msgstr "VYBERTE SI MENU"
+
+msgid "Manažér menu / Nové menu"
+msgstr "Manažér menu / Nové menu"
+
+msgid "Názov kľúča"
+msgstr "Názov kľúča"
+
+msgid "Hodnota"
+msgstr "Hodnota"
+
+msgid "Názov súboru"
+msgstr "Názov súboru"
+
+msgid "Rozmery"
+msgstr "Rozmery"
+
+msgid "odhlásiť"
+msgstr "Odhlásiť"
+
+msgid "Názov odkazu"
+msgstr "Názov odkazu"
+
+msgid "Manažér používateľov / Úprava používateľa"
+msgstr "Manažér používateľov / Úprava používateľa"
+
+msgid "Detail používateľa"
+msgstr "Detail používateľa"
+
+msgid "Titul"
+msgstr "Titul"
+
+msgid "Meno"
+msgstr "Meno"
+
+msgid "Priezvisko"
+msgstr "Priezvisko"
+
+msgid "Nick"
+msgstr "Nick"
+
+msgid "Prihlasovacie meno"
+msgstr "Prihlasovacie meno"
+
+msgid "Heslo"
+msgstr "Heslo"
+
+msgid "Ulica"
+msgstr "Ulica"
+
+msgid "Mesto"
+msgstr "Mesto"
+
+msgid "PSČ"
+msgstr "PSČ"
+
+msgid "Krajina"
+msgstr "Krajina"
+
+msgid "Telefón"
+msgstr "Telefón"
+
+msgid "Fax"
+msgstr "Fax"
+
+msgid "Mobil"
+msgstr "Mobil"
+
+msgid "Email"
+msgstr "E-Mail"
+
+msgid "Priezvisko a Meno"
+msgstr "Priezvisko a Meno"
+
+msgid "ID používateľa"
+msgstr "ID používateľa"
+
+msgid "Manažér odkazov / Úprava odkazu"
+msgstr "Manažér odkazov / Úprava odkazu"
+
+msgid "Detail odkazu"
+msgstr "Detail odkazu"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "Cieľ"
+msgstr "Cieľ"
+
+msgid "None (use implicit)"
+msgstr "None (use implicit)"
+
+msgid "New window (_blank)"
+msgstr "New window (_blank)"
+
+msgid "Same frame (_self)"
+msgstr "Same frame (_self)"
+
+msgid "Top frame (_top)"
+msgstr "Top frame (_top)"
+
+msgid "Popis odkazu"
+msgstr "Popis odkazu"
+
+msgid "Existujúce priradenia"
+msgstr "Existujúce priradenia"
+
+msgid "Naozaj chcete vymazať väzbu odkazu s menu "
+msgstr "Naozaj chcete vymazať väzbu odkazu s menu "
+
+msgid "Naozaj chcete vymazať väzbu odkazu s kategórie "
+msgstr "Naozaj chcete vymazať väzbu odkazu s kategórie "
+
+msgid "Manažér odkazov / Nový odkaz"
+msgstr "Manažér odkazov / Nový odkaz"
+
+msgid "Proxia"
+msgstr "Proxia"
+
+msgid "login"
+msgstr "login"
+
+msgid "heslo"
+msgstr "heslo"
+
+msgid "Login"
+msgstr "Login"
+
+msgid "Vyberte si projekt na aktualizáciu"
+msgstr "Vyberte si projekt na aktualizáciu"
+

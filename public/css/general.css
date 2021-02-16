@@ -1,0 +1,74 @@
+body
+{
+	margin: 0;
+	padding: 0;
+
+	font-family: Verdana, Tahoma, sans-serif;
+	font-size: 9px;
+
+	text-align: left;
+}
+form
+{
+	margin: 0;
+	padding: 0;
+}
+
+img
+{
+	border: 0px;
+}
+
+table {
+	font-family: Verdana, Tahoma, sans-serif;
+	font-size: 9px;
+}
+
+td {
+	text-align: left;
+}
+
+input, select, textarea {
+	font-size:10px;
+	font-family: Verdana, Tahoma, sans-serif;
+	color:#000000;
+	font-weight:normal;
+	border-color:#e1e1e1;
+	border-style: solid;
+	border-width: 1px;
+}
+
+input.button {
+	font-size:10px;
+	font-family: Verdana, Tahoma, sans-serif;
+	color:#000;
+	font-weight:normal;
+	border-color:darkblue;
+	border-style: solid;
+	border-width: 1px;
+}
+
+:link, :visited	{
+	font-weight: normal ;
+	font-size:8pt;
+	font-family: Verdana, Tahoma, sans-serif;
+}
+a {
+	text-decoration:none; color: #cc9933;
+}
+a:hover {
+	text-decoration:none; color: #000000;
+}
+
+div#system_message{
+	float: left;
+	width: 98%;
+	position: absolute;
+	font-size: 140%;
+	background-color: #FFE09F;
+	padding: 10px;
+	text-align: center;
+	display: none;
+	border: 1px solid red;
+	opacity:0.8;
+}

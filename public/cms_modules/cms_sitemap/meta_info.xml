@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<mod_meta_info>
+
+	<section name="code">
+		<content language="independent">CMS_Sitemap</content>
+	</section>
+
+	<section name="author">
+	</section>
+
+	<section name="title">
+		<content language="sk">Mapa Stránok</content>
+		<content language="en">Site map</content>
+		<content language="hu">Lap térkép</content>
+	</section>
+
+	<section name="description">
+		<content language="sk">Mapa Stránok</content>
+		<content language="en">Site map</content>
+		<content language="hu">Lap térkép</content>
+	</section>
+
+</mod_meta_info>

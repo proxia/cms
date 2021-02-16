@@ -1,0 +1,91 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>{$lang_flash_title}</title>
+	<script language="javascript" type="text/javascript" src="../../tiny_mce_popup.js"></script>
+	<script language="javascript" type="text/javascript" src="jscripts/flash.js"></script>
+	<script language="javascript" type="text/javascript" src="../../utils/mctabs.js"></script>
+	<script language="javascript" type="text/javascript" src="../../utils/form_utils.js"></script>
+	<script language="javascript" type="text/javascript">
+
+	function insertfile(form_name,form_text_name){
+		var x1 = 700;
+		var y1 = 400;
+     	var left = screen.width/2 - x1/2;
+     	var top = screen.height/2 - y1/2;
+    	window.open("../../../../../../?cmd=29&form_name="+form_name+"&form_text_name="+form_text_name+"&media_path_output=flash","prehlad","scrollbars=yes,width="+x1+",height="+y1+",left="+left+",top="+top);
+}
+	</script>
+	<link href="css/flash.css" rel="stylesheet" type="text/css" />
+	<base target="_self" />
+</head>
+<body onload="tinyMCEPopup.executeOnLoad('init();');" style="display: none">
+    <form name="form_popup" onsubmit="insertFlash();return false;" action="#">
+		<div class="tabs">
+			<ul>
+				<li id="general_tab" class="current"><span><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;">{$lang_flash_general}</a></span></li>
+			</ul>
+		</div>
+
+		<div class="panel_wrapper">
+			<div id="general_panel" class="panel current">
+				<fieldset>
+					<legend>{$lang_flash_general}</legend>
+
+					<table border="0" cellpadding="4" cellspacing="0">
+							<tr>
+							<td nowrap="nowrap"><label for="file">{$lang_flash_file}</label></td>
+							  <td nowrap="nowrap">
+									<table border="0" cellspacing="0" cellpadding="0">
+									  <tr>
+										<td><input id="file" name="file" type="text" value="" onfocus="this.select();" /></td>
+										<td id=""><a href="javascript:insertfile('form_popup','file')" title="{insert name='tr' value='Vlož video'}"><img src="../../../../images/paste.gif" width="21" height="21" border="0"></a></td>
+										<td id="filebrowsercontainer"></td>
+									  </tr>
+									</table>
+								</td>
+							</tr>
+							<tr id="linklistrow" style="display:none">
+								<td><label for="linklist">{$lang_flash_list}</label></td>
+								<td id="linklistcontainer">&nbsp;</td>
+							</tr>
+							<tr>
+								<td nowrap="nowrap"><label>{$lang_flash_size}</label></td>
+								<td nowrap="nowrap">
+									<input type="text" id="width" name="width" value="" onfocus="this.select();" />
+									<select name="width2" id="width2" style="width: 50px">
+										<option value="">px</option>
+										<option value="%">%</option>
+									</select>&nbsp;x&nbsp;<input id="height" name="height" type="text"  value="" onfocus="this.select();" />
+									<select name="height2" id="height2" style="width: 50px">
+										<option value="">px</option>
+										<option value="%">%</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+							<td nowrap="nowrap"><label for="file">{$lang_flash_falshvars}</label></td>
+							  <td nowrap="nowrap">
+									<table border="0" cellspacing="0" cellpadding="0">
+									  <tr>
+										<td><input id="xflashvars" name="xflashvars" type="text" value="" style="width: 250px"/></td>
+									  </tr>
+									</table>
+								</td>
+							</tr>
+					</table>
+				</fieldset>
+			</div>
+		</div>
+
+		<div class="mceActionPanel">
+			<div style="float: left">
+				<input type="button" id="insert" name="insert" value="{$lang_insert}" onclick="insertFlash();" />
+			</div>
+
+			<div style="float: right">
+				<input type="button" id="cancel" name="cancel" value="{$lang_cancel}" onclick="tinyMCEPopup.close();" />
+			</div>
+		</div>
+	</form>
+</body>
+</html>

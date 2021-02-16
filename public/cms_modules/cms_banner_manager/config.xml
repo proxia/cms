@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<configuration>
+
+	<section name="general">
+		<option name="email_webmaster" value="web-ma-ster@site.com" type="string" />
+	</section>
+
+	<section name="site">
+		<option name="name" value="Hello World" type="string" />
+		<option name="is_offline" value="false" type="bool" />
+		<option name="offline_message" value="This site is offline right now, try again later." type="string" />
+		<option name="show_font_size_panel" value="false" type="bool" />
+		<option name="show_article_detail" value="true" type="bool" />
+		<option name="show_print_bar" value="false" type="bool" />
+		<option name="show_rating_bar" value="false" type="bool" />
+		<option name="show_article_comments" value="true" type="bool" />
+		<option name="show_most_read_articles" value="true" type="bool" />
+		<option name="show_recent_articles" value="true" type="bool" />
+		<option name="show_article_atachments" value="true" type="bool" />
+		<option name="show_foot_description" value="true" type="bool" />
+	</section>
+
+	<section name="cms">
+		<option name="web_editor" value="xinha" type="string" />
+		<option name="records_per_page" value="20" type="numeric" />
+		<option name="upload_allow_only" value="all" type="string" />
+		<option name="upload_max_size" value="2000000" type="numeric" />
+		<option name="max_simultanous_upload" value="10" type="numeric" />
+		<option name="show_edit_field_for_counter" value="true" type="bool" />
+	</section>
+
+</configuration>

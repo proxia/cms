@@ -1,0 +1,145 @@
+<?php
+
+$settings['offset'] = 1; // Holland ;)
+
+require ('./convert.php');
+
+class ZipLib {
+
+var $archive;
+var $archive_fileinfo = array();
+var $archive_filecount;
+var $compr_lvl_last;
+
+function zl_compress($data,$level = "",$type = "") {
+	if($type != "g" && $type != "b" && $type != "n") {
+		// Darnit, they forgot to set the type. Assuming gZip if any compression
+		if($level >= 1 && $level <= 9) $type = "g";
+		elseif($level > 9) die("Compression level set too high");
+		else $type = "n";
+	}
+
+	if($type == "g") {
+		$this->compr_lvl_last = 8;
+		RETURN gzdeflate($data,$level);
+	} elseif($type == "b") {
+		$this->compr_lvl_last = 12;
+		RETURN bzcompress($data,$level);
+	} else {
+		$this->compr_lvl_last = 0;
+		RETURN $data;
+	}
+}
+
+function zl_add_file($data,$filename,$comp = "") {
+	global $settings;
+	// if we already created a file, we'll make sure it'll be there in the coming zipfile ;)
+
+	// first, checking some data
+	if(strlen($filename) > pow(2,16)-1) die("Filename $filename too long"); // ooh, dirty... dieing, will change later
+	if(strlen($data) > pow(2,32)-1) die("File $filename larger then 2GB, cannot continue"); // another one, naughty me ;)
+
+	// $comp has a special format. the first character tells me about the compression, the second one represents the level
+	if(strlen($comp) == 1) {
+		// they still use the old method, assuming gzip
+
+		$comp_type = "n";
+		$comp_lvl = 0;
+		if($comp >= 1 && $comp <= 9) {
+			$comp_type = "g";
+			$comp_lvl = $comp;
+		}
+	} else {
+		$comp_lvl = 5;
+		$comp_type = "n";
+		// hmmm, the new method. Is it valid?
+		if ($comp[0] == "b" OR $comp[0] == "g" OR $comp[0] == "n") $comp_type = $comp[0];
+		if (preg_match("/[0-9]/i",$comp[1])) $comp_lvl = $comp[1];
+	}
+
+	// ok, let's get this bitch tidy:
+	// first adding a file
+	$compressed = $this->zl_compress($data,$comp_lvl,$comp_type);
+	$uncompressed = strlen($data);
+
+	$newfile = "\x50\x4b\x03\x04";				// Header
+	$newfile .="\x00\x00";					// Version needed to extract
+	$newfile .="\x00\x00";					// general purpose bit flag
+	$newfile .=pack("v",$this->compr_lvl_last);		// compression method
+	$newfile .=pack("v",dostime_get($settings['offset']));			// last mod file time
+	$newfile .=pack("v",dosdate_get($settings['offset']));			// last mod file date
+	$newfile .=pack("V",crc32($data));			// CRC32
+	$newfile .=pack("V",strlen($compressed));		// compressed filesize
+	$newfile .=pack("V",$uncompressed);			// uncompressed filesize
+	$newfile .=pack("v",strlen($filename));			// length of filename
+	$newfile .="\x00\x00";					// some sort of extra field ;)
+	$newfile .=$filename;
+	$newfile .=$compressed;
+
+	$this->archive .= $newfile;
+
+
+	// some 'statistics' for this file ;)
+	$this->archive_filecount++;
+	$idf = $this->archive_filecount - 1;
+	$this->archive_fileinfo[$this->archive_filecount]['comp_type'] = $this->compr_lvl_last;
+	$this->archive_fileinfo[$this->archive_filecount]['size'] = strlen($data);
+	$this->archive_fileinfo[$this->archive_filecount]['size_comp'] = strlen($compressed);
+	$this->archive_fileinfo[$this->archive_filecount]['pkg_size'] = strlen($newfile);
+	if(!empty($this->archive_fileinfo[$idf]['local_stats_pointer'])) {
+		$this->archive_fileinfo[$this->archive_filecount]['local_stats_pointer'] =
+		$this->archive_fileinfo[$idf]['local_stats_pointer'] +
+		$this->archive_fileinfo[$idf]['pkg_size'] + 1; // HACKERDIEHACK! only way to get local_stats_pointer to '0' (for now) in zl_pack
+	} else {
+		$this->archive_fileinfo[$this->archive_filecount]['local_stats_pointer'] = 1;
+	}
+	$this->archive_fileinfo[$this->archive_filecount]['name'] = $filename;
+	$this->archive_fileinfo[$this->archive_filecount]['crc32'] = crc32($data);
+	unset($file,$compressed); // to avoid having data in our memory double ;)
+	RETURN TRUE;
+}
+
+function zl_pack($comment) {
+	global $settings;
+	if(strlen($comment) > pow(2,16)-1) die("Comment too long"); // that's 3
+
+	// now the central directory structure start
+	for($x=1;$x <= $this->archive_filecount;$x++) {
+		$file_stats = $this->archive_fileinfo[$x];
+		$cdss .= "\x50\x4b\x01\x02";			// Header
+		$cdss .="\x00\x00";				// version made by
+		$cdss .="\x00\x00";				// version needed to extract
+		$cdss .="\x00\x00";				// general purpose bit flag
+		$cdss .=pack("v",$file_stats['comp_type']);	// compression method
+		$cdss .=pack("v",dostime_get($settings['offset']));		// last mod file time
+		$cdss .=pack("v",dosdate_get($settings['offset']));		// last mod file date
+		$cdss .=pack("V",$file_stats['crc32']);		// CRC32
+		$cdss .=pack("V",$file_stats['size_comp']);	// compressed size
+		$cdss .=pack("V",$file_stats['size']);		// uncompressed size
+		$cdss .=pack("v",strlen($file_stats['name']));	// file name length
+		$cdss .="\x00\x00";				// extra field length
+		$cdss .="\x00\x00";				// file comment length
+		$cdss .="\x00\x00";				// disk number start
+		$cdss .="\x00\x00";				// internal file attributes
+		$cdss .="\x00\x00\x00\x00";			// external file attributes
+		$cdss .=pack("V",$file_stats['local_stats_pointer']-$x);	// relative offset of local header
+										// aka: The local_stats_pointer hack: part 2, see above
+		$cdss .=$file_stats['name'];
+	}
+
+	// and final, the ending central directory structure! "WHOO HOOW!" (Blur, 1998)
+	$cdse = "\x50\x4b\x05\x06";			// Header
+	$cdse .="\x00\x00";				// number of this disk
+	$cdse .="\x00\x00";				// number of the disk with the start of the central directory
+	$cdse .=pack("v",$this->archive_filecount);	// total number of entries in the central directory on this disk
+	$cdse .=pack("v",$this->archive_filecount);	// total number of entries in the central directory
+	$cdse .=pack("V",strlen($cdss));		// size of the central directory
+	$cdse .=pack("V",strlen($this->archive));	// offset of start of central directory with respect to the starting disk number
+	$cdse .=pack("v",strlen($comment));		// .ZIP file comment length
+	$cdse .=$comment;
+
+	return $this->archive.$cdss.$cdse;
+}
+
+}
+?>

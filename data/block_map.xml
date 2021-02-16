@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<webstorm_block_map>
+
+<!-- group section -->
+
+	<groups>
+
+		<group id="1" name="Core">
+			<group id="1.1" name="Site" />
+			<group id="1.2" name="User" />
+			<group id="1.3" name="Category" />
+			<group id="1.4" name="Article" />
+			<group id="1.5" name="Weblink" />
+			<group id="1.6" name="Menu" />
+			<group id="1.7" name="Search" />
+			<group id="1.8" name="Nameday" />
+		</group>
+
+		<group id="2" name="Modules">
+			<group id="2.1" name="Catalog" />
+			<group id="2.2" name="Inquiry" />
+			<group id="2.3" name="BannerManager" />
+			<group id="2.4" name="Forum" />
+			<group id="2.5" name="Sitemap" />
+			<group id="2.6" name="Map" />
+			<group id="2.7" name="Learning" />
+			<group id="2.8" name="School" />
+			<group id="2.9" name="Web" />
+			<group id="2.10" name="EventCalendar" />
+			<group id="2.11" name="Gallery" />
+			<group id="2.12" name="KnaufCalculating" />
+			<group id="2.13" name="Configurator" />
+			<group id="2.14" name="Guestbook" />
+			<group id="2.15" name="Newsletter" />
+		</group>
+
+	</groups>
+
+<!-- block section -->
+
+	<blocks>
+
+		<!-- group site -->
+
+		<block group_id="1.1" name="Frontpage">
+
+			<parameters>
+				<param name="show_creation" default="true" />
+				<param name="show_author" default="true" />
+				<param name="show_description" default="true" />
+			</parameters>
+
+		</block>
+
+		<block group_id="1.1" name="LastModification">
+
+			<parameters>
+				<param name="orientation" type="string" default="vertical" />
+				<param name="show_caption" type="bool" default="true" />
+			</parameters>
+
+		</block>
+
+		<block group_id="1.1" name="News">
+
+			<parameters>
+				<param name="orientation" default="vertical" />
+				<param name="show_caption" default="true" />
+				<param name="limit" default="5" />
+				<param name="show_flash_news" default="true" />
+			</parameters>
+
+		</block>
+		<block group_id="1.1" name="FlashNews">
+
+			<parameters>
+				<param name="orientation" default="vertical" />
+				<param name="show_caption" default="true" />
+				<param name="limit" default="5" />
+			</parameters>
+
+		</block>
+		<block group_id="1.1" name="ApycomMenu">
+
+			<parameters>
+				<param name="orientation" type="string" default="vertical" />
+				<param name="show_caption" type="bool" default="true" />
+			</parameters>
+
+		</block>
+
+		<block group_id="1.1" name="LanguageSelector">
+
+			<parameters>
+				<param name="orientation" default="vertical" />
+				<param name="type" default="list" />
+				<param name="show_flags" default="true" />
+				<param name="show_language_names" default="false" />
+				<param name="show_language_codes" default="false" />
+				<param name="flag_image_prefix" default="images/flags" />
+				<param name="flag_image_type" default="png" />
+			</parameters>
+
+		</block>
+
+		<block group_id="1.1" name="MessageBar">
+
+			<parameters>
+			</parameters>
+
+		</block>
+
+		<block group_id="1.1" name="NavigationBar">
+
+			<parameters>
+				<param name="show_current_entry" default="true" />
+				<param name="show_current_entry_link" default="false" />
+
+				<param name="separator" default="-" />
+			</parameters>
+
+		</block>
+
+		<block group_id="1.1" name="Recommendation">
+
+			<parameters>
+				<param name="redirect_uri" default="default" />
+				<param name="show_cc_field" default="true" />
+				<param name="show_bcc_field" default="true" />
+			</parameters>
+
+		</block>
+
+		<block group_id="1.1" name="ContactForm">
+
+			<parameters>
+				<param name="email_address" default="null" />
+				<param name="from_email_address" default="null" />
+				<param name="redirect_url" default="default" />
+			</parameters>
+
+		</block>
+
+		<block group_id="1.1" name="OrderForm">
+
+			<parameters>
+				<param name="email_address" default="null" />
+				<param name="from_email_address" default="null" />
+				<param name="redirect_url" default="default" />
+			</parameters>
+
+		</block>
+
+		<block group_id="1.1" name="InterrogationForm" alias="Questionary">
+
+			<parameters>
+				<param name="email_address" default="null" />
+				<param name="from_email_address" default="null" />
+				<param name="redirect_url" default="default" />
+			</parameters>
+
+		</block>
+
+		<block group_id="1.2" name="ReCaptcha">
+
+			<parameters>
+			</parameters>
+
+		</block>
+
+		<!-- group user -->
+
+		<block group_id="1.2" name="UserView">
+
+			<properties>
+				<property name="entity_type" value="6" />
+			</properties>
+
+			<parameters>
+			</parameters>
+
+		</block>
+
+		<block group_id="1.2" name="LoginForm">
+
+			<parameters>
+				<param name="orientation" type="string" default="vertical" />
+				<param name="show_caption" type="bool" default="true" />
+				<param name="caption_text" default="User Login" />
+				<param name="show_submit_button" type="bool" default="true" />
+				<param name="submit_button_text" default="OK" />
+				<param name="show_register_link" type="bool" default="true" />
+				<param name="register_link_text" default="register" />
+				<param name="show_lost_password_link" type="bool" default="true" />
+				<param name="lost_password_text" default="lost password" />
+			</parameters>
+
+		</block>
+
+		<block group_id="1.2" name="LogoutForm">
+
+			<parameters>
+
+				<param name="orientation" default="vertical" />
+				<param name="redirect_url" default="default" />
+				<param name="show_logout_button" default="true" />
+				<param name="show_edit_link" default="true" />
+				<param name="show_caption" default="true" />
+
+			</parameters>
+
+		</block>
+
+		<block group_id="1.2" name="RegistrationForm" alias="Register">
+
+			<parameters>
+				<param name="autologin" default="true" />
+				<param name="redirect_url" default="default" />
+
+				<param name="avatar_max_file_size" default="40000" />
+				<param name="avatar_max_width" default="50" />
+				<param name="avatar_max_height" default="50" />
+
+				<param name="show_caption" default="true" />
+				<param name="show_submit_button" default="true" />
+				<param name="show_reset_button" default="true" />
+
+				<param name="show_field_login" default="true" />
+				<param name="show_field_password" default="true" />
+				<param name="show_field_nickname" default="true" />
+				<param name="show_field_avatar" default="true" />
+				<param name="show_field_firstname" default="true" />
+				<param name="show_field_familyname" default="true" />
+				<param name="show_field_age" default="true" />
+				<param name="show_field_sex" default="true" />
+				<param name="show_field_title" default="true" />
+				<param name="show_field_street" default="true" />
+				<param name="show_field_city" default="true" />
+				<param name="show_field_zip" default="true" />
+				<param name="show_field_country" default="true" />
+				<param name="show_field_phone" default="true" />
+				<param name="show_field_fax" default="true" />
+				<param name="show_field_cell" default="true" />
+				<param name="show_field_email" default="true" />
+				<param name="show_field_website" default="true" />
+				<param name="show_field_send_newsletter" default="true" />
+
+			</parameters>
+
+		</block>
+
+		<block group_id="1.2" name="EditForm">
+
+			<parameters>
+
+				<param name="avatar_max_file_size" default="40000" />
+				<param name="avatar_max_width" default="50" />
+				<param name="avatar_max_height" default="50" />
+
+				<param name="show_caption" default="true" />
+				<param name="show_submit_button" default="true" />
+				<param name="show_reset_button" default="true" />
+
+				<param name="show_field_login" default="true" />
+				<param name="show_field_password" default="true" />
+				<param name="show_field_nickname" default="true" />
+				<param name="show_field_firstname" default="true" />
+				<param name="show_field_familyname" default="true" />
+				<param name="show_field_age" default="true" />
+				<param name="show_field_sex" default="true" />
+				<param name="show_field_title" default="true" />
+				<param name="show_field_street" default="true" />
+				<param name="show_field_city" default="true" />
+				<param name="show_field_zip" default="true" />
+				<param name="show_field_country" default="true" />
+				<param name="show_field_phone" default="true" />
+				<param name="show_field_fax" default="true" />
+				<param name="show_field_cell" default="true" />
+				<param name="show_field_email" default="true" />
+				<param name="show_field_website" default="true" />
+				<param name="show_field_send_newsletter" default="true" />
+
+			</parameters>
+
+		</block>
+
+		<block group_id="1.2" name="LostPassword">
+
+			<parameters>
+				<param name="from_address" default="" />
+				<param name="from_name" default="" />
+			</parameters>
+
+		</block>
+
+		<!-- group category -->
+
+		<block group_id="1.3" name="CategoryDisplay" >
+
+			<properties>
+				<property name="entity_type" value="1" />
+			</properties>
+
+			<parameters>
+			</parameters>
+
+		</block>
+
+		<block group_id="1.3" name="CategoryView" alias="Category">
+
+			<properties>
+				<property name="entity_type" value="1" />
+			</properties>
+
+			<parameters>
+				<param name="display_list" default="1,2,5" />
+				<param name="show_not_privileged_items" default="true" />
+				<param name="link_to_not_privileged_items" default="false" />
+			</parameters>
+
+		</block>
+
+		<block group_id="1.3" name="SideView">
+
+			<properties>
+				<property name="entity_type" value="1" />
+			</properties>
+
+			<parameters>
+				<param name="display_list" default="1,2,5" />
+				<param name="show_not_privileged_items" default="true" />
+				<param name="link_to_not_privileged_items" default="false" />
+			</parameters>
+
+		</block>
+
+		<!-- group article -->
+
+		<block group_id="1.4" name="ArticleDisplay" alias="Article">
+
+			<properties>
+				<property name="entity_type" value="2" />
+			</properties>
+
+			<parameters>
+				<param name="show_title" default="true" />
+				<param name="show_description" default="true" />
+				<param name="show_author" default="true" />
+				<param name="show_creation_date" default="true" />
+
+				<param name="show_galleries" default="true" />
+				<param name="gallery_thumbnail_width" default="150" />
+				<param name="gallery_thumbnail_height" default="150" />
+				<param name="gallery_thumbnails_per_page" default="12" />
+				<param name="gallery_thumbnails_per_row" default="4" />
+
+				<param name="show_attachments" default="true" />
+				<param name="show_attachment_icons" default="true" />
+				<param name="attachment_icon_prefix" default="images/icons" />
+				<param name="attachment_icon_type" default="png" />
+
+				<param name="show_watermark_image" default="false" />
+				<param name="watermark_image" default="null" />
+				<param name="watermark_image_horizontal_position" default="center" />
+				<param name="watermark_image_vertical_position" default="middle" />
+
+			</parameters>
+
+		</block>
+
+		<block group_id="1.4" name="ArchiveView" alias="Archive">
+
+			<properties>
+				<property name="entity_type" value="2" />
+			</properties>
+
+			<parameters>
+				<param name="articles_per_page" default="30" />
+				<param name="show_page_navigator" default="true" />
+			</parameters>
+
+		</block>
+
+		<!-- group weblink -->
+
+		<block group_id="1.5" name="WeblinkLauncher" alias="Weblink">
+
+			<properties>
+				<property name="entity_type" value="5" />
+			</properties>
+
+			<parameters>
+
+			</parameters>
+
+		</block>
+
+		<!-- group menu -->
+
+		<block group_id="1.6" name="SimpleMenu">
+
+			<properties>
+				<property name="entity_type" value="4" />
+			</properties>
+
+			<parameters>
+				<param name="maximum_levels" default="2" />
+			</parameters>
+
+		</block>
+
+		<block group_id="1.6" name="SuckerfishMenu">
+
+			<properties>
+				<property name="entity_type" value="4" />
+			</properties>
+
+			<parameters />
+		</block>
+
+		<!-- group search -->
+
+		<block group_id="1.7" name="SearchResults">
+
+			<properties />
+
+			<parameters>
+			</parameters>
+
+		</block>
+
+		<block group_id="1.7" name="SimpleSearch">
+
+			<properties />
+
+			<parameters>
+				<param name="fulltext_search" default="true" />
+				<param name="search_in" default="2,100,120" />
+			</parameters>
+
+		</block>
+
+		<block group_id="1.8" name="CurrentNameday">
+
+			<properties />
+
+			<parameters>
+			</parameters>
+
+		</block>
+
+		<!-- group catalog -->
+
+		<block group_id="2.1" name="CatalogView" alias="Catalog">
+
+			<properties>
+				<property name="entity_type" value="100" />
+			</properties>
+
+			<parameters>
+				<param name="show_not_privileged_items" default="true" />
+				<param name="link_to_not_privileged_items" default="false" />
+			</parameters>
+
+		</block>
+
+		<block group_id="2.1" name="BranchView" alias="Catalog_Branch">
+
+			<properties>
+				<property name="entity_type" value="104" />
+			</properties>
+
+			<parameters>
+				<param name="show_child_branches" default="false" />
+				<param name="show_attributes" default="false" />
+				<param name="show_prices" default="false" />
+				<param name="show_more_link" default="true" />
+
+				<param name="show_thumbnails" default="false" />
+				<param name="thumbnail_width" default="150" />
+				<param name="thumbnail_height" default="150" />
+
+				<param name="show_page_navigator" default="true" />
+				<param name="show_page_indexes" default="true" />
+
+				<param name="child_branches_per_page" default="12" />
+				<param name="child_branches_per_row" default="3" />
+				<param name="products_per_page" default="12" />
+				<param name="products_per_row" default="3" />
+				<param name="show_product_gallery" default="true" />
+				<param name="product_gallery_thumbnail_width" default="150" />
+				<param name="product_gallery_thumbnail_height" default="150" />
+				<param name="product_gallery_thumbnails_per_page" default="12" />
+				<param name="product_gallery_thumbnails_per_row" default="3" />
+
+				<param name="show_not_privileged_items" default="true" />
+				<param name="link_to_not_privileged_items" default="false" />
+			</parameters>
+
+		</block>
+
+		<block group_id="2.1" name="ProductView" alias="Catalog_Product">
+
+			<properties>
+				<property name="entity_type" value="101" />
+			</properties>
+
+			<parameters>
+				<param name="show_photo_gallery" default="true" />
+				<param name="thumbnail_width" default="150" />
+				<param name="thumbnail_height" default="150" />
+				<param name="images_per_row" default="5" />
+				<param name="show_prices" default="false" />
+				<param name="show_not_privileged_items" default="true" />
+				<param name="link_to_not_privileged_items" default="false" />
+				<param name="show_watermark_image" default="false" />
+				<param name="watermark_image" default="null" />
+				<param name="watermark_image_horizontal_position" default="center" />
+				<param name="watermark_image_vertical_position" default="middle" />
+			</parameters>
+
+		</block>
+
+		<block group_id="2.1" name="CatalogNews">
+			<parameters>
+				<param name="orientation" default="vertical" />
+				<param name="show_caption" default="true" />
+				<param name="limit" default="5" />
+			</parameters>
+
+		</block>
+
+		<block group_id="2.1" name="BranchMenuView">
+			<parameters>
+			</parameters>
+
+		</block>
+		<block group_id="2.1" name="DopytView">
+			<parameters>
+			</parameters>
+		</block>
+		<block group_id="2.1" name="BasketView">
+			<parameters>
+			</parameters>
+		</block>
+		<block group_id="2.1" name="PriceList">
+			<parameters>
+			</parameters>
+		</block>
+		<!-- group inquiry -->
+
+		<block group_id="2.2" name="InquiryList">
+
+			<properties>
+				<property name="entity_type" value="110" />
+			</properties>
+
+			<parameters>
+				<param name="show_caption" default="true" />
+				<param name="show_inquiry_title" default="true" />
+				<param name="show_color_bar" default="false" />
+				<param name="color_bar_scheme" default="1" />
+				<param name="color_bar_image_prefix" default="images/color_bar" />
+				<param name="color_bar_image_type" default="gif" />
+
+			</parameters>
+
+		</block>
+
+		<!-- group banner manager -->
+
+		<block group_id="2.3" name="Banner">
+
+			<properties>
+				<property name="entity_type" value="190" />
+			</properties>
+
+			<parameters>
+				<param name="max_width" default="0" />
+				<param name="max_height" default="0" />
+			</parameters>
+
+		</block>
+
+		<block group_id="2.3" name="BannerList">
+
+			<properties>
+				<property name="entity_type" value="190" />
+			</properties>
+
+			<parameters>
+				<param name="limit" default="5" />
+				<param name="randomize" default="true" />
+			</parameters>
+
+		</block>
+
+		<block group_id="2.3" name="BannerLauncher">
+
+			<properties>
+				<property name="entity_type" value="190" />
+			</properties>
+
+			<parameters>
+			</parameters>
+
+		</block>
+
+		<!-- group forum -->
+
+		<block group_id="2.4" name="ForumList">
+
+			<properties>
+				<property name="entity_type" value="120" />
+			</properties>
+
+			<parameters>
+				<param name="show_caption" default="true" />
+				<param name="show_title" default="true" />
+				<param name="show_description" default="false" />
+
+				<parame name="topics_per_page" default="10" />
+				<parame name="show_topic_thread_count" default="true" />
+				<parame name="show_topic_reply_count" default="false" />
+			</parameters>
+
+		</block>
+
+		<block group_id="2.4" name="ForumView" alias="Forum">
+
+			<properties>
+				<property name="entity_type" value="120" />
+			</properties>
+
+			<parameters>
+
+			</parameters>
+
+		</block>
+
+		<block group_id="2.4" name="TopicView" alias="Topic">
+
+			<properties>
+				<property name="entity_type" value="1" />
+			</properties>
+
+			<parameters>
+				<param name="threads_per_page" default="30" />
+				<param name="show_page_navigator" default="true" />
+			</parameters>
+
+		</block>
+
+		<block group_id="2.4" name="ThreadView" alias="Thread">
+
+			<properties>
+				<property name="entity_type" value="2" />
+			</properties>
+
+			<parameters>
+				<param name="reply_permission" default="all" />
+
+				<param name="replies_per_page" default="50" />
+				<param name="show_page_navigator" default="true" />
+			</parameters>
+
+		</block>
+
+		<!-- group banner manager -->
+
+		<block group_id="2.5" name="SitemapView" alias="Sitemap">
+
+			<properties>
+			</properties>
+
+			<parameters>
+				<param name="show_icons" default="true" />
+				<param name="icon_image_prefix" default="images/icons" />
+				<param name="icon_image_type" default="png" />
+			</parameters>
+
+		</block>
+
+		<block group_id="2.6" name="MapList" alias="Maps">
+
+			<properties>
+			</properties>
+
+			<parameters>
+				<param name="show_map_title" default="true" />
+			</parameters>
+
+		</block>
+		<block group_id="2.6" name="MapView" alias="Map">
+
+			<properties>
+			</properties>
+
+			<parameters>
+				<param name="show_route_profile" default="true" />
+			</parameters>
+
+		</block>
+
+		<block group_id="2.6" name="RouteView" alias="Route">
+			<properties />
+			<parameters />
+		</block>
+
+		<block group_id="2.6" name="NodeView" alias="Node">
+
+			<properties>
+			</properties>
+
+			<parameters>
+			</parameters>
+
+		</block>
+		<block group_id="2.6" name="RouteView" alias="Route">
+
+			<properties>
+			</properties>
+
+			<parameters>
+			</parameters>
+
+		</block>
+		<block group_id="2.6" name="MarkerList" >
+
+			<properties>
+			</properties>
+
+			<parameters>
+			</parameters>
+
+		</block>
+		<block group_id="2.6" name="StatusList" >
+
+			<properties>
+			</properties>
+
+			<parameters>
+			</parameters>
+
+		</block>
+		<block group_id="2.6" name="AttractionView" >
+
+			<properties>
+			</properties>
+
+			<parameters>
+			</parameters>
+
+		</block>
+		<block group_id="2.7" name="CourseList" alias="Courses">
+
+			<properties>
+			</properties>
+
+			<parameters>
+
+			</parameters>
+
+		</block>
+
+		<block group_id="2.7" name="CourseView" alias="Course">
+
+			<properties>
+			</properties>
+
+			<parameters>
+
+			</parameters>
+
+		</block>
+		<block group_id="2.7" name="Learning" >
+
+			<properties>
+			</properties>
+
+			<parameters>
+
+			</parameters>
+
+		</block>
+		<block group_id="2.8" name="School" >
+
+			<properties>
+			</properties>
+
+			<parameters>
+
+			</parameters>
+
+		</block>
+		<block group_id="2.9" name="Web" >
+
+			<properties>
+			</properties>
+
+			<parameters>
+			</parameters>
+		</block>
+		<block group_id="2.10" name="EventList" alias="Event">
+
+			<properties>
+			</properties>
+
+			<parameters>
+				<param name="show_description" default="true" />
+				<param name="show_title" default="true" />
+				<param name="show_start_date" default="true" />
+				<param name="show_end_date" default="true" />
+				<param name="show_type" default="true" />
+				<param name="show_type_caption" default="true" />
+				<param name="show_place" default="true" />
+				<param name="show_place_caption" default="true" />
+				<param name="show_time" default="true" />
+				<param name="rows_limit" default="3" />
+			</parameters>
+
+		</block>
+		<block group_id="2.10" name="EventSearch" >
+
+			<properties>
+			</properties>
+
+			<parameters>
+
+			</parameters>
+
+		</block>
+		<block group_id="2.10" name="EventView" >
+
+			<properties>
+			</properties>
+
+			<parameters>
+				<param name="show_description" default="true" />
+				<param name="show_title" default="true" />
+				<param name="show_start_date" default="true" />
+				<param name="show_end_date" default="true" />
+				<param name="show_type" default="true" />
+				<param name="show_type_caption" default="true" />
+				<param name="show_place" default="true" />
+				<param name="show_place_caption" default="true" />
+				<param name="show_time" default="true" />
+			</parameters>
+
+		</block>
+
+		<block group_id="2.11" name="GalleryList" >
+
+			<properties>
+			</properties>
+
+			<parameters>
+				<param name="show_photos" default="true" />
+				<param name="photos_per_gallery" default="5" />
+				<param name="photos_order" default="order" />
+				<param name="thumbnail_width" default="150" />
+				<param name="thumbnail_height" default="150" />
+			</parameters>
+
+		</block>
+
+		<block group_id="2.11" name="GalleryView" alias="Gallery">
+			<properties>
+				<property name="entity_type" value="170" />
+			</properties>
+
+			<parameters>
+				<param name="thumbnail_width" default="150" />
+				<param name="thumbnail_height" default="150" />
+				<param name="gallery_thumbnails_per_row" default="4" />
+				<param name="gallery_thumbnails_per_page" default="12" />
+				<param name="show_watermark_image" default="false" />
+				<param name="watermark_image" default="null" />
+				<param name="watermark_image_horizontal_position" default="center" />
+				<param name="watermark_image_vertical_position" default="middle" />
+			</parameters>
+
+		</block>
+
+		<block group_id="2.12" name="CalculatingView" alias="Calculation">
+
+			<properties>
+			</properties>
+
+			<parameters>
+
+			</parameters>
+
+		</block>
+
+		<!-- group configurator -->
+
+		<block group_id="2.13" name="ConfiguratorView" alias="Configurator">
+
+			<properties>
+			</properties>
+
+			<parameters>
+				<param name="style" default="simple" />
+			</parameters>
+
+		</block>
+		<block group_id="2.13" name="ConfiguratorTree" >
+
+			<properties>
+			</properties>
+
+			<parameters>
+			</parameters>
+
+		</block>
+		<block group_id="2.14" name="GuestbookView" alias="Guestbook">
+
+			<properties>
+			</properties>
+
+			<parameters>
+				<param name="items_per_page" default="25" />
+				<param name="show_title" default="false" />
+			</parameters>
+
+		</block>
+		<block group_id="2.14" name="GuestbookList" >
+
+			<properties>
+
+			</properties>
+
+			<parameters>
+
+			</parameters>
+
+		</block>
+
+		<block group_id="2.15" name="NewsletterView" alias="Newsletter" >
+
+			<properties>
+				<property name="entity_type" value="161" />
+			</properties>
+
+			<parameters>
+				<param name="show_user_name_field" default="true" />
+			</parameters>
+
+		</block>
+
+		<block group_id="2.15" name="UnsubscribeView" alias="Unsubscribe" >
+
+			<properties>
+				<property name="entity_type" value="161" />
+			</properties>
+
+			<parameters>
+			</parameters>
+
+		</block>
+	</blocks>
+
+</webstorm_block_map>

@@ -1,0 +1,9 @@
+Database connection failed.
+Selection of data source failed.
+SQL query failed.
+Database disconnection failed.
+Unknown query type.
+No result to perform operation.
+Position is out of range.
+Can't set names to UTF-8.
+Database driver isn't loaded. Open database connection first.

@@ -1,0 +1,865 @@
+# .
+# Copyright (C)
+# This file is distributed under the same license as the  package.
+#  <>, .
+#
+msgid ""
+msgstr ""
+"Project-Id-Version:  \n"
+"Report-Msgid-Bugs-To:  <>\n"
+"POT-Creation-Date: 2006-06-01 13:09+0200\n"
+"PO-Revision-Date: 2006-04-19 12:01+0200\n"
+"Last-Translator:  <>\n"
+"Language-Team:  <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "There are loose data in table `%1$s` for `id` %2$s."
+msgstr "Adatok elvesztek a `%1$s` jegyzékben `id` %2$s"
+
+msgid "Can't move item out of boundry. Vector index: %1$s, New index: %2$s"
+msgstr ""
+"A tétel nem mozdítható határon kívül. Vektor index: %1$s, Új index: %2$s"
+
+msgid "Nové"
+msgstr "Új"
+
+msgid "Uprav"
+msgstr "Módosít"
+
+msgid "Ukáž"
+msgstr "Megmutatni"
+
+msgid "Ukry"
+msgstr "Eldugni"
+
+msgid "Vymazať"
+msgstr "Töröl"
+
+msgid "Pomocník"
+msgstr "Segély"
+
+msgid "Uložiť"
+msgstr "Tárol"
+
+msgid "Použiť"
+msgstr "Felhasznál"
+
+msgid "Zrušiť"
+msgstr "Visszavon"
+
+msgid "Nová téma"
+msgstr "Új téma"
+
+msgid "Téma"
+msgstr "Téma"
+
+msgid "nezadali ste povinnú položku"
+msgstr "nem töltötte ki a kötelező tételt"
+
+msgid "Fórum manažér / Úprava fórumu"
+msgstr "Fórum menedzser / Fórum módosítása"
+
+msgid "Detail fórumu"
+msgstr "Fórum részlete"
+
+msgid "Názov"
+msgstr "Elnevezés"
+
+msgid "Popis"
+msgstr "Leírás"
+
+msgid "Viditeľnosť"
+msgstr "Láthatóság"
+
+msgid "Nie"
+msgstr "Nem"
+
+msgid "Áno"
+msgstr "Igen"
+
+msgid "Zmazať tému"
+msgstr "Témát töröl"
+
+msgid "Lektori"
+msgstr "Előadók"
+
+msgid "Zoznam používateľov"
+msgstr "Felhasználók névsora"
+
+msgid "Nevybrali ste žiadny záznam na spracovanie"
+msgstr "Nem választott ki semmilyen feljegyzést feldolgozásra"
+
+msgid ""
+"Pozor táto operácia je nevratná, vybrané položky sa navždy vymažú !!! "
+"Vymazať ?"
+msgstr ""
+"Vigyázat, ez a művelet nem vonható vissza, a megjelölt tételek örökre ki "
+"lesznek törölve !!! Fojtatni?"
+
+msgid "Fórum manažér"
+msgstr "Fórum menedzser"
+
+msgid "Názov fórumu"
+msgstr "Fórum elnevezése"
+
+msgid "Odpoveď"
+msgstr "Válasz"
+
+msgid "Fórum manažér / Nové fórum"
+msgstr "Fórum menedzser / Új fórum"
+
+msgid "Nová"
+msgstr "Új"
+
+msgid "Nová odpoveď"
+msgstr "Új válasz"
+
+msgid "Manažér ankiet / Úprava ankety"
+msgstr "Ankét menedzser / Ankét módosítás"
+
+msgid "Detail ankety"
+msgstr "Ankét részlet"
+
+msgid "Popis ankety"
+msgstr "Ankét leírása"
+
+msgid "Ukáž výsledky"
+msgstr "Mutasd meg az eredményt"
+
+msgid "Platnosť kliku"
+msgstr "Kattintás érvényessége"
+
+msgid "bez obmedzenia"
+msgstr "korlátozás nélkül"
+
+msgid "hodina"
+msgstr "egy óra"
+
+msgid "deň"
+msgstr "egy nap"
+
+msgid "týždeň"
+msgstr "egy hét"
+
+msgid "mesiac"
+msgstr "hónap"
+
+msgid "mesiace"
+msgstr "hónap"
+
+msgid "mesiacov"
+msgstr "hónap"
+
+msgid "rok"
+msgstr "egy év"
+
+msgid "nekonečne"
+msgstr "határtalan"
+
+msgid "Otázka"
+msgstr "Kérdés"
+
+msgid ""
+"Pozor táto operácia je nevratná, vybraná položka sa navždy vymaže !!! "
+"Vymazať ?"
+msgstr ""
+"Vigyázat, ez a művelet nem vonható vissza, a megjelölt tétel örökre ki lesz "
+"törölve !!! Fojtatni?"
+
+msgid "Manažér ankiet"
+msgstr "Ankét menedzser"
+
+msgid "Názov ankety"
+msgstr "Ankét elnevezése"
+
+msgid "Počet otázok"
+msgstr "Kérdések száma"
+
+msgid "Počet odpovedí"
+msgstr "Válaszok száma"
+
+msgid "Manažér ankiet / Nová anketa"
+msgstr "Ankét menedzser / Új ankét"
+
+msgid "Manažér firiem / Úprava firmy"
+msgstr "Menü menedzser / Menü módosítása"
+
+msgid "Detail firmy"
+msgstr "Fórum részlete"
+
+msgid "Názov firmy"
+msgstr "Fórum elnevezése"
+
+msgid "Popis firmy"
+msgstr "Menü leírása"
+
+msgid "Telefón"
+msgstr "Telefon"
+
+msgid "Fax"
+msgstr "Fax"
+
+msgid "Mobil"
+msgstr "Mobil"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Ulica"
+msgstr "Utca"
+
+msgid "Mesto"
+msgstr "Város"
+
+msgid "PSČ"
+msgstr "Irányítószám"
+
+msgid "Krajina"
+msgstr "Ország"
+
+msgid "IČO"
+msgstr "TAJ"
+
+msgid "DIČ"
+msgstr "Adóazonosító jel"
+
+msgid "Požívatelia"
+msgstr "Felhasználó ID"
+
+msgid "Používatelia"
+msgstr "Felhasználó ID"
+
+msgid "Manažér firiem"
+msgstr "Ankét menedzser"
+
+msgid "Manažér firiem / Nová firma"
+msgstr "Ankét menedzser / Új ankét"
+
+msgid "`$entity_instance` must be valid subclass of CMS_Entity."
+msgstr "`$entity_instance` a CMS_Entity érvényes alosztályának muszáj lennije"
+
+msgid "FÓRUM"
+msgstr "FÓRUM"
+
+msgid "Úprava mapy stránky"
+msgstr "Menü módosítása"
+
+msgid "Náhľad"
+msgstr "Megtekintés"
+
+msgid "Mapa stránky"
+msgstr "Következő lap"
+
+msgid "Musis nastavit id pouzivatela, alebo nastavit answer data."
+msgstr "Be kell állítani a felhasználó id-jét vagy a válasz adatokat."
+
+msgid "Domov"
+msgstr "Haza"
+
+msgid "Menu"
+msgstr "Menü"
+
+msgid "Stránka"
+msgstr "Oldal"
+
+msgid "Obsah"
+msgstr "Tartalom"
+
+msgid "Moduly"
+msgstr "Moduluszok"
+
+msgid "Rýchlo"
+msgstr "Gyorsan"
+
+msgid "Manažér menu"
+msgstr "Menü menedzser"
+
+msgid "Hlavné nastavenia"
+msgstr "Fő beállítások"
+
+msgid "Kôš"
+msgstr "Kosár"
+
+msgid "Manažér médií"
+msgstr "Közvetítő eszközök menedzserje"
+
+msgid "Manažér používateľov"
+msgstr "Felhasználók menedzserje"
+
+msgid "Ukážka"
+msgstr "Minta"
+
+msgid "Manažér článkov"
+msgstr "Cikk menedzser"
+
+msgid "Novinky"
+msgstr "Újdonságok"
+
+msgid "Manažér kategórií"
+msgstr "Kategória menedzser"
+
+msgid "Úvodná stránka"
+msgstr "Honlap"
+
+msgid "Manažér odkazov"
+msgstr "Üzenet menedzser"
+
+msgid "Archív manažér"
+msgstr "Irattár menedzser"
+
+msgid "Manažér jazykov"
+msgstr "Nyelv menedzser"
+
+msgid "Jazyk aplikácie"
+msgstr "Aplikáció nyelv"
+
+msgid "Prehľad kategórií"
+msgstr "Kategóriák áttekintése"
+
+msgid "Väzby kategórií"
+msgstr "Kategóriák összekötése"
+
+msgid "Prehľad menu"
+msgstr "Menü áttekintése"
+
+msgid "Väzby menu"
+msgstr "Menük összekötése"
+
+msgid "Zoznam článkov"
+msgstr "Cikk jegyzék"
+
+msgid "Nový článok"
+msgstr "Új cikk"
+
+msgid "Zoznam kategórií"
+msgstr "Kategória jegyzék"
+
+msgid "Nová kategória"
+msgstr "Új kategória"
+
+msgid "Nový súbor"
+msgstr "Új állomány"
+
+msgid "Jazyk obsahu"
+msgstr "Tartalom nyelve"
+
+msgid "Používateľská príručka"
+msgstr "Felhasználó segédkönyv"
+
+msgid "Informácie"
+msgstr "Információk"
+
+msgid "Priradenie k menu"
+msgstr "Besorol a menühöz"
+
+msgid "Priradenie ku kategórii"
+msgstr "Besorol a kategóriához"
+
+msgid "Jazykové verzie"
+msgstr "Nyelv változatok"
+
+msgid "Ikony jazykových verzií"
+msgstr "Nyelv változat ikonok"
+
+msgid "Info"
+msgstr "Info"
+
+msgid "Priradiť k menu"
+msgstr "Besorolni a menühöz"
+
+msgid "Priradiť ku kategórii"
+msgstr "Besorolni a kategóriához"
+
+msgid "Prílohy"
+msgstr "Mellékletek"
+
+msgid "Kategórie"
+msgstr "Kategóriák"
+
+msgid "Články"
+msgstr "Cikkek"
+
+msgid "Odkazy"
+msgstr "Üzenetek"
+
+msgid "najcitanejsie"
+msgstr "leggyakrabban olvasott"
+
+msgid "najnovsie"
+msgstr "legújabb"
+
+msgid "novi pouzivatelia"
+msgstr "új felhasználók"
+
+msgid "Príliš dlhý text"
+msgstr "A szöveg túl hosszú"
+
+msgid "Príliš krátky text"
+msgstr "A szöveg túl rövid"
+
+msgid "Nezadali ste povinnú položku"
+msgstr "Nem töltötte ki a kötelező tételt"
+
+msgid "Nie je číslo"
+msgstr "Nem szám"
+
+msgid "Nie je email"
+msgstr "Nem email"
+
+msgid "Nie je url"
+msgstr "Nem url"
+
+msgid "Nie je zhodné heslo"
+msgstr "A jelszó nem egyezik meg"
+
+msgid "Nevybrali ste žiadny spôsob platby"
+msgstr "Nem választot ki semilyen fizetési módot"
+
+msgid "Nepriradené kategórie"
+msgstr "Nem besorolt kategóriák"
+
+msgid "Kopíruj"
+msgstr "Lemásol"
+
+msgid "Do koša"
+msgstr "Szemétkosárba"
+
+msgid "Nový"
+msgstr "Új"
+
+msgid "Archív"
+msgstr "Irattár"
+
+msgid "Obnoviť"
+msgstr "Megújítani"
+
+msgid "Aktivuj"
+msgstr "Aktiválni"
+
+msgid "Deaktivuj"
+msgstr "Deaktiválni"
+
+msgid "Nový adresár"
+msgstr "Új címtár"
+
+msgid "Nový riadok"
+msgstr "Új sor"
+
+msgid "Pridaj článok"
+msgstr "Cikket hozzáadni"
+
+msgid "Pridaj obrázok"
+msgstr "Képet hozzáadni"
+
+msgid "Pridaj kategóriu"
+msgstr "Kategóriát hozzáadni"
+
+msgid "Menu manažér"
+msgstr "Menü menedzser"
+
+msgid "Archív článkov"
+msgstr "Cikk irattár"
+
+msgid "Názov článku"
+msgstr "Cikk elnevezése"
+
+msgid "ID článku"
+msgstr "Cikk ID"
+
+msgid "Nadradená kategória"
+msgstr "Fölérendelt kategória"
+
+msgid "Autor"
+msgstr "Szerző"
+
+msgid "Dátum"
+msgstr "Dátum"
+
+msgid "po expirácii"
+msgstr "lejárt"
+
+msgid "Manažér článkov / Úprava článku"
+msgstr "Cikk menedzser / Cikk módosítása"
+
+msgid "Detail článku"
+msgstr "Cikk részlet"
+
+msgid "Popis článku"
+msgstr "Cikk leírása"
+
+msgid "Text článku"
+msgstr "Cikk szövegje"
+
+msgid "Jazyk"
+msgstr "Nyelv"
+
+msgid "Text"
+msgstr "Szöveg"
+
+msgid "Detailné nastavenia"
+msgstr "Részletes beállítások"
+
+msgid "Ukáž na úvodnej stránke"
+msgstr "Mutasd meg a honlapon"
+
+msgid "Novinka"
+msgstr "Újdonság"
+
+msgid "Flash novinka"
+msgstr "Fellobbant újdonság"
+
+msgid "Vytvorenie"
+msgstr "Létrehoz"
+
+msgid "Platnosť"
+msgstr "Érvényesség"
+
+msgid "Zobrazovacie&nbsp;práva"
+msgstr "Megtekintési&nbsp;jogok"
+
+msgid "Verejné"
+msgstr "Nyílt"
+
+msgid "Registrovaným"
+msgstr "Regisztrált"
+
+msgid "Skupiny používateľov"
+msgstr "Felhasználó csoportok"
+
+msgid "vyberte menu"
+msgstr "válasszon menüt"
+
+msgid "Priraď k menu"
+msgstr "Besorol a menühöz"
+
+msgid "Zoznam priradení"
+msgstr "Besorlás jegyzék"
+
+msgid "Naozaj chcete vymazať väzbu článku s menu "
+msgstr "Igazán ki akarja törölni a cikk összekötését a menüvel "
+
+msgid "zmazať"
+msgstr "töröl"
+
+msgid "vyberte kategóriu"
+msgstr "válasszon kategóriát"
+
+msgid "Priraď ku kategórii"
+msgstr "Besorol a kategóriához"
+
+msgid "Naozaj chcete vymazať väzbu článku s kategóriou "
+msgstr "Igazán ki akarja törölni a cikk összekötését a kategóriával "
+
+msgid "Príloha"
+msgstr "Melléklet"
+
+msgid "vlož obrázok"
+msgstr "képet betesz"
+
+msgid "Prilož prílohu"
+msgstr "Melléklet hozzáadása"
+
+msgid "Zoznam príloh"
+msgstr "Besorlás jegyzék"
+
+msgid "Naozaj chcete vymazať prílohu "
+msgstr "Igazán ki akarja törölni a mellékletet "
+
+msgid "ukáž"
+msgstr "Megmutatni"
+
+msgid "Zmeniť nastavenie"
+msgstr "Részletes beállítások"
+
+msgid "filter"
+msgstr "szűrő"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "všetky kategórie"
+msgstr "összes kategória"
+
+msgid "Preklad"
+msgstr "Fordítás"
+
+msgid "Predchádzajúca stránka"
+msgstr "Előző lap"
+
+msgid "Ďalšia stránka"
+msgstr "Következő lap"
+
+msgid "Posledná stránka"
+msgstr "Utolsó lap"
+
+msgid "Manažér článkov / Nový článok"
+msgstr "Cikk menedzser / Új cikk"
+
+msgid "Vyberte menu"
+msgstr "Válasszon menüt"
+
+msgid "Vyberte kategóriu"
+msgstr "Válasszon kategóriát"
+
+msgid "Manažér kategórií / Úprava kategórie"
+msgstr "Kategória menedzser / Kategória módosítása"
+
+msgid "Detail kategórie"
+msgstr "Kategória részlet"
+
+msgid "Názov kategórie"
+msgstr "Kategória elnevezése"
+
+msgid "Popis kategórie"
+msgstr "Kategória leírása"
+
+msgid "Ikona"
+msgstr "Ikon"
+
+msgid "Naozaj chcete vymazať väzbu kategórie s menu "
+msgstr "Igazán ki akarja törölni a kategória összekötését a menüvel "
+
+msgid "Uložiť ikony"
+msgstr "Tárol"
+
+msgid "Manažér kategórií / Prehľad kategórií"
+msgstr "Kategória menedzser / Kategóriák áttekintése"
+
+msgid "ID kategórie"
+msgstr "Kategória ID"
+
+msgid "Manažér kategórií / Väzby kategórií"
+msgstr "Kategória menedzser / Kategóriák összekötése"
+
+msgid "VYBERTE SI KATEGÓRIU"
+msgstr "VÁLASSZON KATEGÓRIÁT"
+
+msgid "Poradie"
+msgstr "Sorrend"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Typ záznamu"
+msgstr "Feljegyzés típus"
+
+msgid "posuň smerom dole"
+msgstr "elmozdul lefelé"
+
+msgid "posuň smerom hore"
+msgstr "elmozdul felfelé"
+
+msgid "TOP KATEGÓRIA"
+msgstr "CSÚCS KATEGÓRIA"
+
+msgid "Manažér kategórií / Nová kategória"
+msgstr "Kategória menedzser / Új kategória"
+
+msgid "Priezvisko a Meno"
+msgstr "Vezetéknév és Keresztnév"
+
+msgid "Dátum registrácie"
+msgstr "Regisztráció időpontja"
+
+msgid "Manažér jazykov / Úprava jazyka"
+msgstr "Nyelv menedzser / Nyelv módosítása"
+
+msgid "Detail jazyka"
+msgstr "Nyelv részletesen"
+
+msgid "Názov jazyka"
+msgstr "Nyelv elnevezése"
+
+msgid "Skratka jazyka"
+msgstr "Nyelv rövidítése"
+
+msgid "Globálna viditeľnosť"
+msgstr "Globális láthatóság"
+
+msgid "Lokálna viditeľnosť"
+msgstr "Helyi láthatóság"
+
+msgid "Manažér jazykov / Nový jazyk"
+msgstr "Nyelv menedzser / Új nyelv"
+
+msgid ""
+"Pozor táto operácia je nevratná, vybrané položky sa navždy vymažú!!! "
+"Vymazať ?"
+msgstr ""
+"Vigyázat, ez a művelet nem vonható vissza, a megjelölt tételek örökre ki "
+"lesznek törölve !!! Fojtatni?"
+
+msgid "Veľkosť"
+msgstr "Nagyság"
+
+msgid "Manažér médií / Nový súbor"
+msgstr "Közvetítő eszközök menedzserje / Új állomány"
+
+msgid "Cieľový adresár"
+msgstr "Cél címtár"
+
+msgid "Manažér médií / Nový adresár"
+msgstr "Közvetítő eszközök menedzserje / Új címtár"
+
+msgid "Nadradený adresár"
+msgstr "Fölérendelt címtár"
+
+msgid "Názov adresára"
+msgstr "Címtár elnevezése"
+
+msgid "Manažér menu / Úprava menu"
+msgstr "Menü menedzser / Menü módosítása"
+
+msgid "Detail menu"
+msgstr "Menü részlet"
+
+msgid "Title menu"
+msgstr "Cím menü"
+
+msgid "Názov menu"
+msgstr "Menü elnevezése"
+
+msgid "Popis menu"
+msgstr "Menü leírása"
+
+msgid "Manažér menu / Prehľad menu"
+msgstr "Menü menedzser / Menü áttekintése"
+
+msgid "Manažér menu / Väzby menu"
+msgstr "Menü menedzser / Menü összekötése"
+
+msgid "VYBERTE SI MENU"
+msgstr "VÁLASSZON MENÜT"
+
+msgid "Manažér menu / Nové menu"
+msgstr "Menü menedzser / Új menü"
+
+msgid "Názov kľúča"
+msgstr "Kulcs elnevezése"
+
+msgid "Hodnota"
+msgstr "Érték"
+
+msgid "Názov súboru"
+msgstr "Állomány elnevezése"
+
+msgid "Rozmery"
+msgstr "Méretek"
+
+msgid "odhlásiť"
+msgstr "Kijelentkez"
+
+msgid "Názov odkazu"
+msgstr "Üzenet elnevezése"
+
+msgid "Manažér používateľov / Úprava používateľa"
+msgstr "Felhasználó menedzser / Felhasználó módosítása"
+
+msgid "Detail používateľa"
+msgstr "Felhasználó részletesen"
+
+msgid "Titul"
+msgstr "Cím"
+
+msgid "Meno"
+msgstr "Keresztnév"
+
+msgid "Priezvisko"
+msgstr "Vezetéknév"
+
+msgid "Nick"
+msgstr "Becenév"
+
+msgid "Prihlasovacie meno"
+msgstr "Bejelentkezési név"
+
+msgid "Heslo"
+msgstr "Jelszó"
+
+msgid "ID používateľa"
+msgstr "Felhasználó ID"
+
+msgid "Editor"
+msgstr "Szerkesztő"
+
+msgid "Manažér odkazov / Úprava odkazu"
+msgstr "Üzenet menedzser / Üzenet módosítása"
+
+msgid "Detail odkazu"
+msgstr "Üzenet részlet"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "Cieľ"
+msgstr "Cél"
+
+msgid "None (use implicit)"
+msgstr "Semmi (implicit beálítások lesznek használva)"
+
+msgid "New window (_blank)"
+msgstr "Új ablak (_blank)"
+
+msgid "Same frame (_self)"
+msgstr "Ugyanaz a keret (_self)"
+
+msgid "Top frame (_top)"
+msgstr "Csúcs keret (_top)"
+
+msgid "Popis odkazu"
+msgstr "Üzenet leírása"
+
+msgid "Existujúce priradenia"
+msgstr "Létező besorlások"
+
+msgid "Naozaj chcete vymazať väzbu odkazu s menu "
+msgstr "Igazán ki akarja törölni a üzenet összekötését a menüvel "
+
+msgid "Naozaj chcete vymazať väzbu odkazu s kategórie "
+msgstr "Igazán ki akarja törölni a üzenet összekötését a kategóriával "
+
+msgid "Manažér odkazov / Nový odkaz"
+msgstr "Üzenet menedzser / Új üzenet"
+
+msgid "Proxia"
+msgstr "Proxia"
+
+msgid "login"
+msgstr "bejelentkezés"
+
+msgid "heslo"
+msgstr "jelszó"
+
+msgid "Login"
+msgstr "Bejelentkezés"
+
+msgid "Vyberte si projekt na aktualizáciu"
+msgstr "Válasszon tervezetet aktualizálásra"
+
+#~ msgid "Aktívnych"
+#~ msgstr "Aktív"
+
+#~ msgid "Zmazaných"
+#~ msgstr "Törölt"
+
+#~ msgid "Skry"
+#~ msgstr "Elrejt"
+
+#~ msgid "Presun"
+#~ msgstr "Áthelyez"
+
+#~ msgid "Úprava kategórie"
+#~ msgstr "Kategória módosítása"
+
+#~ msgid "Nové menu"
+#~ msgstr "Új menü"
+
+#~ msgid "Nie je zhodnA© heslo"
+#~ msgstr "A jelszó nem egyezik meg"
+
+#~ msgid "Viditeľnosť jazykovej verzie"
+#~ msgstr "Nyelv változat láthatósága"
+
+

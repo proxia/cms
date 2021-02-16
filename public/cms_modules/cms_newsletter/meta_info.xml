@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<mod_meta_info>
+
+	<section name="author">
+		<content language="independent"></content>
+	</section>
+
+	<section name="title">
+		<content language="sk">Newsletter</content>
+	</section>
+
+	<section name="description">
+		<content language="sk">Newsletter</content>
+	</section>
+
+</mod_meta_info>

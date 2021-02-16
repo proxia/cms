@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chestnut_config>
+	<section name="general">
+		<entry name="install_dir">%document_root/projects/chestnut-devel/src</entry>
+	</section>
+</chestnut_config>

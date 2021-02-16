@@ -1,0 +1,859 @@
+# .
+# Copyright (C)
+# This file is distributed under the same license as the  package.
+#  <>, .
+#
+
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0 \n"
+"Report-Msgid-Bugs-To:  <>\n"
+"POT-Creation-Date: 2006-06-06 7:43+0200\n"
+"PO-Revision-Date: 2006-04-25 15:41+0200\n"
+"Language-Team:  <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "There are loose data in table `%1$s` for `id` %2$s."
+msgstr "There are loose data in table `%1$s` for `id` %2$s."
+
+msgid "Can't move item out of boundry. Vector index: %1$s, New index: %2$s"
+msgstr "Can't move item out of boundry. Vector index: %1$s, New index: %2$s"
+
+msgid "Nové"
+msgstr "New"
+
+msgid "Uprav"
+msgstr "Edit"
+
+msgid "Ukáž"
+msgstr "Show"
+
+msgid "Ukry"
+msgstr "Hide"
+
+msgid "Vymazať"
+msgstr "Delete"
+
+msgid "Pomocník"
+msgstr "Help"
+
+msgid "Uložiť"
+msgstr "Save"
+
+msgid "Použiť"
+msgstr "Apply"
+
+msgid "Zrušiť"
+msgstr "Cancel"
+
+msgid "Nová téma"
+msgstr "New topic"
+
+msgid "Téma"
+msgstr "Topic"
+
+msgid "nezadali ste povinnú položku"
+msgstr "some of the mandatory fields are empty"
+
+msgid "Fórum manažér / Úprava fórumu"
+msgstr "Forum manager / Forum edit"
+
+msgid "Detail fórumu"
+msgstr "Forum detail"
+
+msgid "Názov"
+msgstr "Title"
+
+msgid "Popis"
+msgstr "Description"
+
+msgid "Viditeľnosť"
+msgstr "Visibility"
+
+msgid "Nie"
+msgstr "No"
+
+msgid "Áno"
+msgstr "Yes"
+
+msgid "Zmazať tému"
+msgstr "Delete topic"
+
+msgid "Lektori"
+msgstr "Lektors"
+
+msgid "Zoznam používateľov"
+msgstr "User list"
+
+msgid "Nevybrali ste žiadny záznam na spracovanie"
+msgstr "You didn't select any item for editing"
+
+msgid ""
+"Pozor táto operácia je nevratná, vybrané položky sa navždy vymažú !!! "
+"Vymazať ?"
+msgstr ""
+"Warning this operation is ireversable, selected items will be permanently "
+"deleted !!! Do you wish to continue?"
+
+msgid "Fórum manažér"
+msgstr "Forum manager"
+
+msgid "Názov fórumu"
+msgstr "Forum title"
+
+msgid "Odpoveď"
+msgstr "Answer"
+
+msgid "Fórum manažér / Nové fórum"
+msgstr "Forum manager / New forum"
+
+msgid "Nová"
+msgstr "New"
+
+msgid "Nová odpoveď"
+msgstr "New answer"
+
+msgid "Manažér ankiet / Úprava ankety"
+msgstr "Inquiry manager / Inquiry edit"
+
+msgid "Detail ankety"
+msgstr "Inquiry detail"
+
+msgid "Popis ankety"
+msgstr "Inquiry description"
+
+msgid "Ukáž výsledky"
+msgstr "Show results"
+
+msgid "Platnosť kliku"
+msgstr "User can vote again"
+
+msgid "bez obmedzenia"
+msgstr " without restrictions"
+
+msgid "hodina"
+msgstr "hour"
+
+msgid "deň"
+msgstr "day"
+
+msgid "týždeň"
+msgstr "week"
+
+msgid "mesiac"
+msgstr "month"
+
+msgid "mesiace"
+msgstr "months"
+
+msgid "mesiacov"
+msgstr "months"
+
+msgid "rok"
+msgstr "year"
+
+msgid "nekonečne"
+msgstr "infinite"
+
+msgid "Otázka"
+msgstr "Question"
+
+msgid ""
+"Pozor táto operácia je nevratná, vybraná položka sa navždy vymaže !!! "
+"Vymazať ?"
+msgstr ""
+"Warning this operation is ireversable, selected item will be permanently "
+"deleted !!! Do you wish to continue?"
+
+msgid "Manažér ankiet"
+msgstr "Inquiry manager"
+
+msgid "Názov ankety"
+msgstr "Inquiry title"
+
+msgid "Počet otázok"
+msgstr "Number of questions"
+
+msgid "Počet odpovedí"
+msgstr "Number of answers"
+
+msgid "Manažér ankiet / Nová anketa"
+msgstr "Inquiry manager / New inquiry"
+
+msgid "Manažér firiem / Úprava firmy"
+msgstr "Menu manager / Menu edit"
+
+msgid "Detail firmy"
+msgstr "Forum detail"
+
+msgid "Názov firmy"
+msgstr "Forum title"
+
+msgid "Popis firmy"
+msgstr "Menu description"
+
+msgid "Telefón"
+msgstr "Telephone"
+
+msgid "Fax"
+msgstr "Fax"
+
+msgid "Mobil"
+msgstr "Cell phone"
+
+msgid "Email"
+msgstr "E-Mail"
+
+msgid "Ulica"
+msgstr "Street"
+
+msgid "Mesto"
+msgstr "City"
+
+msgid "PSČ"
+msgstr "ZIP"
+
+msgid "Krajina"
+msgstr "Country"
+
+msgid "IČO"
+msgstr ""
+
+msgid "DIČ"
+msgstr ""
+
+msgid "Požívatelia"
+msgstr "User ID"
+
+msgid "Používatelia"
+msgstr "User ID"
+
+msgid "Manažér firiem"
+msgstr "Inquiry manager"
+
+msgid "Manažér firiem / Nová firma"
+msgstr "Inquiry manager / New inquiry"
+
+msgid "`$entity_instance` must be valid subclass of CMS_Entity."
+msgstr "`$entity_instance` must be valid subclass of CMS_Entity."
+
+msgid "FÓRUM"
+msgstr "FORUM"
+
+msgid "Úprava mapy stránky"
+msgstr "Menu edit"
+
+msgid "Náhľad"
+msgstr "Preview"
+
+msgid "Mapa stránky"
+msgstr "Site Map"
+
+msgid "Musis nastavit id pouzivatela, alebo nastavit answer data."
+msgstr "Set user id or answer data."
+
+msgid "Domov"
+msgstr "Home"
+
+msgid "Menu"
+msgstr "Menu"
+
+msgid "Stránka"
+msgstr "Page"
+
+msgid "Obsah"
+msgstr "Contents"
+
+msgid "Moduly"
+msgstr "Modules"
+
+msgid "Rýchlo"
+msgstr "Quick"
+
+msgid "Manažér menu"
+msgstr "Menu manager"
+
+msgid "Hlavné nastavenia"
+msgstr "Main options"
+
+msgid "Kôš"
+msgstr "Trash"
+
+msgid "Manažér médií"
+msgstr "Media manager"
+
+msgid "Manažér používateľov"
+msgstr "User manager"
+
+msgid "Ukážka"
+msgstr "Preview"
+
+msgid "Manažér článkov"
+msgstr "Article manager"
+
+msgid "Novinky"
+msgstr "News"
+
+msgid "Manažér kategórií"
+msgstr "Category manager"
+
+msgid "Úvodná stránka"
+msgstr "Front page"
+
+msgid "Manažér odkazov"
+msgstr "Weblink manager"
+
+msgid "Archív manažér"
+msgstr "Archive manager"
+
+msgid "Manažér jazykov"
+msgstr "Language manager"
+
+msgid "Jazyk aplikácie"
+msgstr "Language"
+
+msgid "Prehľad kategórií"
+msgstr "Overview"
+
+msgid "Väzby kategórií"
+msgstr "Categories bindings"
+
+msgid "Prehľad menu"
+msgstr "Overview"
+
+msgid "Väzby menu"
+msgstr "Menu bindings"
+
+msgid "Zoznam článkov"
+msgstr "Artcile list"
+
+msgid "Nový článok"
+msgstr "New article"
+
+msgid "Zoznam kategórií"
+msgstr "Cetegory list"
+
+msgid "Nová kategória"
+msgstr "New category"
+
+msgid "Nový súbor"
+msgstr "New file"
+
+msgid "Jazyk obsahu"
+msgstr "Content language"
+
+msgid "Používateľská príručka"
+msgstr "User manual"
+
+msgid "Informácie"
+msgstr "Informations"
+
+msgid "Priradenie k menu"
+msgstr "Menu bindings"
+
+msgid "Priradenie ku kategórii"
+msgstr "Category bindings"
+
+msgid "Jazykové verzie"
+msgstr "Language versions"
+
+msgid "Ikony jazykových verzií"
+msgstr "Icons of language versions"
+
+msgid "Info"
+msgstr "Info"
+
+msgid "Priradiť k menu"
+msgstr "Bind to menu"
+
+msgid "Priradiť ku kategórii"
+msgstr "Bind to category"
+
+msgid "Prílohy"
+msgstr "Attachments"
+
+msgid "Kategórie"
+msgstr "Categories"
+
+msgid "Články"
+msgstr "Articles"
+
+msgid "Odkazy"
+msgstr "Weblinks"
+
+msgid "najcitanejsie"
+msgstr "most read"
+
+msgid "najnovsie"
+msgstr "recent"
+
+msgid "novi pouzivatelia"
+msgstr "new users"
+
+msgid "Príliš dlhý text"
+msgstr "Text is too long"
+
+msgid "Príliš krátky text"
+msgstr "Text is too short"
+
+msgid "Nezadali ste povinnú položku"
+msgstr "Some of the mandatory fields are empty"
+
+msgid "Nie je číslo"
+msgstr "Not a number"
+
+msgid "Nie je email"
+msgstr "Email is invalid"
+
+msgid "Nie je url"
+msgstr "URL is invalid"
+
+msgid "Nie je zhodné heslo"
+msgstr "Passwords doesn't match"
+
+msgid "Nevybrali ste žiadny spôsob platby"
+msgstr "You didn't select any item for editing"
+
+msgid "Nepriradené kategórie"
+msgstr "Not binded categories"
+
+msgid "Kopíruj"
+msgstr "Copy"
+
+msgid "Do koša"
+msgstr "Trash"
+
+msgid "Nový"
+msgstr "New"
+
+msgid "Archív"
+msgstr "Archive"
+
+msgid "Obnoviť"
+msgstr "Refresh"
+
+msgid "Aktivuj"
+msgstr "Activate"
+
+msgid "Deaktivuj"
+msgstr "Deactivate"
+
+msgid "Nový adresár"
+msgstr "New directory"
+
+msgid "Nový riadok"
+msgstr "New line"
+
+msgid "Pridaj článok"
+msgstr "Add article"
+
+msgid "Pridaj obrázok"
+msgstr "Add image"
+
+msgid "Pridaj kategóriu"
+msgstr "Add category"
+
+msgid "Menu manažér"
+msgstr "Menu manager"
+
+msgid "Archív článkov"
+msgstr "Article archive"
+
+msgid "Názov článku"
+msgstr "Article title"
+
+msgid "ID článku"
+msgstr "Article ID"
+
+msgid "Nadradená kategória"
+msgstr "Parent category"
+
+msgid "Autor"
+msgstr "Author"
+
+msgid "Dátum"
+msgstr "Date"
+
+msgid "po expirácii"
+msgstr "expired"
+
+msgid "Manažér článkov / Úprava článku"
+msgstr "Article manager / Article edit"
+
+msgid "Detail článku"
+msgstr "Article detail"
+
+msgid "Popis článku"
+msgstr "Article description"
+
+msgid "Text článku"
+msgstr "Article text"
+
+msgid "Jazyk"
+msgstr "Language"
+
+msgid "Text"
+msgstr "Text"
+
+msgid "Detailné nastavenia"
+msgstr "Settings"
+
+msgid "Ukáž na úvodnej stránke"
+msgstr "Show on frontpage"
+
+msgid "Novinka"
+msgstr "News"
+
+msgid "Flash novinka"
+msgstr "Flash news"
+
+msgid "Vytvorenie"
+msgstr "Creation"
+
+msgid "Platnosť"
+msgstr "Validity"
+
+msgid "Zobrazovacie&nbsp;práva"
+msgstr "View permissions"
+
+msgid "Verejné"
+msgstr "Public"
+
+msgid "Registrovaným"
+msgstr "Registered only"
+
+msgid "Skupiny používateľov"
+msgstr "Group specific"
+
+msgid "vyberte menu"
+msgstr "select menu"
+
+msgid "Priraď k menu"
+msgstr "Bind to menu"
+
+msgid "Zoznam priradení"
+msgstr "Bindings list"
+
+msgid "Naozaj chcete vymazať väzbu článku s menu "
+msgstr "Your'e about to delete bond between article and menu. Continue"
+
+msgid "zmazať"
+msgstr "delete"
+
+msgid "vyberte kategóriu"
+msgstr "select category"
+
+msgid "Priraď ku kategórii"
+msgstr "Bind to category"
+
+msgid "Naozaj chcete vymazať väzbu článku s kategóriou "
+msgstr "Your'e about to delete bond between article and category. Continue"
+
+msgid "Príloha"
+msgstr "Attachment"
+
+msgid "vlož obrázok"
+msgstr "insert image"
+
+msgid "Prilož prílohu"
+msgstr "Attach"
+
+msgid "Zoznam príloh"
+msgstr "Bindings list"
+
+msgid "Naozaj chcete vymazať prílohu "
+msgstr "Are you sure you want to delete this attachment"
+
+msgid "ukáž"
+msgstr "Show"
+
+msgid "Zmeniť nastavenie"
+msgstr "Settings"
+
+msgid "filter"
+msgstr "filter"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "všetky kategórie"
+msgstr "all categories"
+
+msgid "Preklad"
+msgstr "Translation"
+
+msgid "Predchádzajúca stránka"
+msgstr "Previous page"
+
+msgid "Ďalšia stránka"
+msgstr "next page"
+
+msgid "Posledná stránka"
+msgstr "Last page"
+
+msgid "Manažér článkov / Nový článok"
+msgstr "Article manager / New article"
+
+msgid "Vyberte menu"
+msgstr "Select menu"
+
+msgid "Vyberte kategóriu"
+msgstr "Select category"
+
+msgid "Manažér kategórií / Úprava kategórie"
+msgstr "Media manager / Edit category"
+
+msgid "Detail kategórie"
+msgstr "Category detail"
+
+msgid "Názov kategórie"
+msgstr "Category title"
+
+msgid "Popis kategórie"
+msgstr "Category description"
+
+msgid "Ikona"
+msgstr "Icon"
+
+msgid "Naozaj chcete vymazať väzbu kategórie s menu "
+msgstr "Your'e about to delete bond between category and menu. Continue"
+
+msgid "Uložiť ikony"
+msgstr "Save"
+
+msgid "Manažér kategórií / Prehľad kategórií"
+msgstr "Category manager / Overview"
+
+msgid "ID kategórie"
+msgstr "Category ID"
+
+msgid "Manažér kategórií / Väzby kategórií"
+msgstr "Category manager / Category bindings"
+
+msgid "VYBERTE SI KATEGÓRIU"
+msgstr "SELECT CATEGORY"
+
+msgid "Poradie"
+msgstr "Order"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Typ záznamu"
+msgstr "Entry type"
+
+msgid "posuň smerom dole"
+msgstr "move down"
+
+msgid "posuň smerom hore"
+msgstr "move up"
+
+msgid "TOP KATEGÓRIA"
+msgstr "TOP CATEGORY"
+
+msgid "Manažér kategórií / Nová kategória"
+msgstr "Category manager / New Category"
+
+msgid "Priezvisko a Meno"
+msgstr "Family name nd First name"
+
+msgid "Dátum registrácie"
+msgstr "Registration date"
+
+msgid "Manažér jazykov / Úprava jazyka"
+msgstr "Language manager / Edit language"
+
+msgid "Detail jazyka"
+msgstr "Language detail"
+
+msgid "Názov jazyka"
+msgstr "Language name"
+
+msgid "Skratka jazyka"
+msgstr "Language code"
+
+msgid "Globálna viditeľnosť"
+msgstr "Visibility on the web"
+
+msgid "Lokálna viditeľnosť"
+msgstr "Visibility of content language"
+
+msgid "Manažér jazykov / Nový jazyk"
+msgstr "Language manager / New language"
+
+msgid ""
+"Pozor táto operácia je nevratná, vybrané položky sa navždy vymažú!!! "
+"Vymazať ?"
+msgstr ""
+"Warning, this operation is ireversable, selected item will be deleted "
+"permanently!!! Continue?"
+
+msgid "Veľkosť"
+msgstr "Size"
+
+msgid "Manažér médií / Nový súbor"
+msgstr "Media manager / New file"
+
+msgid "Cieľový adresár"
+msgstr "Target directory"
+
+msgid "Manažér médií / Nový adresár"
+msgstr "Media manager / New directory"
+
+msgid "Nadradený adresár"
+msgstr "Parent directory"
+
+msgid "Názov adresára"
+msgstr "Directory name"
+
+msgid "Manažér menu / Úprava menu"
+msgstr "Menu manager / Menu edit"
+
+msgid "Detail menu"
+msgstr "Menu detail"
+
+msgid "Title menu"
+msgstr "Menu title"
+
+msgid "Názov menu"
+msgstr "Menu title"
+
+msgid "Popis menu"
+msgstr "Menu description"
+
+msgid "Manažér menu / Prehľad menu"
+msgstr "Menu manager / Overview"
+
+msgid "Manažér menu / Väzby menu"
+msgstr "Menu manager / Menu bindings"
+
+msgid "VYBERTE SI MENU"
+msgstr "SELECT MENU"
+
+msgid "Manažér menu / Nové menu"
+msgstr "Menu manager / New menu"
+
+msgid "Názov kľúča"
+msgstr "Key name"
+
+msgid "Hodnota"
+msgstr "Value"
+
+msgid "Názov súboru"
+msgstr "File name"
+
+msgid "Rozmery"
+msgstr "Dimensions"
+
+msgid "odhlásiť"
+msgstr "Logout"
+
+msgid "Názov odkazu"
+msgstr "Weblink name"
+
+msgid "Manažér používateľov / Úprava používateľa"
+msgstr "User manager / User edit"
+
+msgid "Detail používateľa"
+msgstr "User detail"
+
+msgid "Titul"
+msgstr "Title"
+
+msgid "Meno"
+msgstr "First name"
+
+msgid "Priezvisko"
+msgstr "Family name"
+
+msgid "Nick"
+msgstr "Nickname"
+
+msgid "Prihlasovacie meno"
+msgstr "Login"
+
+msgid "Heslo"
+msgstr "Password"
+
+msgid "ID používateľa"
+msgstr "User ID"
+
+msgid "Editor"
+msgstr "Editor"
+
+msgid "Manažér odkazov / Úprava odkazu"
+msgstr "Weblink manager / Weblink edit"
+
+msgid "Detail odkazu"
+msgstr "Weblink detail"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "Cieľ"
+msgstr "Target"
+
+msgid "None (use implicit)"
+msgstr "None (use implicit)"
+
+msgid "New window (_blank)"
+msgstr "New window (_blank)"
+
+msgid "Same frame (_self)"
+msgstr "Same frame (_self)"
+
+msgid "Top frame (_top)"
+msgstr "Top frame (_top)"
+
+msgid "Popis odkazu"
+msgstr "Weblink description"
+
+msgid "Existujúce priradenia"
+msgstr "Bindings"
+
+msgid "Naozaj chcete vymazať väzbu odkazu s menu "
+msgstr "Your'e about to delete bond between weblink and menu. Continue"
+
+msgid "Naozaj chcete vymazať väzbu odkazu s kategórie "
+msgstr "Your'e about to delete bond between weblink and category. Continue"
+
+msgid "Manažér odkazov / Nový odkaz"
+msgstr "Weblink manager / New weblink"
+
+msgid "Proxia"
+msgstr "Proxia"
+
+msgid "login"
+msgstr "login"
+
+msgid "heslo"
+msgstr "heslo"
+
+msgid "Login"
+msgstr "Login"
+
+msgid "Vyberte si projekt na aktualizáciu"
+msgstr "Select project"
+
+#~ msgid "Aktívnych"
+#~ msgstr "Active"
+
+#~ msgid "Zmazaných"
+#~ msgstr "Deleted"
+
+#~ msgid "Skry"
+#~ msgstr "Hide"
+
+#~ msgid "Presuň"
+#~ msgstr "Move"
+
+#~ msgid "Úprava kategórie"
+#~ msgstr "Category edit"
+
+#~ msgid "Nové menu"
+#~ msgstr "New menu"
+
+#~ msgid "Viditeľnosť jazykovej verzie"
+#~ msgstr "Visibility of language version"

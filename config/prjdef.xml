@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<proxia_project_definition>
+    <project>
+        <name></name>
+        <description></description>
+        <creation></creation>
+        <client_info>
+            <name></name>
+            <address></address>
+            <phone></phone>
+            <email></email>
+            <ico></ico>
+            <icdph></icdph>
+        </client_info>
+        <license_info>
+            <license_number/>
+            <start_date></start_date>
+            <end_date></end_date>
+        </license_info>
+    </project>
+    <config>
+        <system>
+            <session_id></session_id>
+            <ftp user="" password=""/>
+            <sql-prod user="" password="" dsn=""/>
+            <sql user="" password="" dsn=""/>
+        </system>
+        <modules>
+            <module name="CMS_Sitemap"/>
+            <module name="CMS_Gallery"/>
+        </modules>
+        <entities>
+            <entity id="1" name="CMS_Category" quantum="-1"/>
+            <entity id="2" name="CMS_Article" quantum="-1"/>
+            <entity id="4" name="CMS_Menu" quantum="-1"/>
+        </entities>
+        <language_versions>
+            <version code="sk"/>
+        </language_versions>
+        <currencies>
+            <currency code="EUR"/>
+        </currencies>
+    </config>
+</proxia_project_definition>

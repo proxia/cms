@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<mod_meta_info>
+
+	<section name="code">
+		<content language="independent">CMS_Inquiry</content>
+	</section>
+
+	<section name="author">
+		<content language="independent"></content>
+	</section>
+
+	<section name="title">
+		<content language="sk">Ankety</content>
+		<content language="en">Inquiry</content>
+		<content language="hu">Ankét</content>
+	</section>
+
+	<section name="description">
+		<content language="sk">Ankety</content>
+		<content language="en">Inquiry</content>
+		<content language="hu">Ankét</content>
+	</section>
+
+</mod_meta_info>

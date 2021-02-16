@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<mod_meta_info>
+
+	<section name="code">
+		<content language="independent">CMS_Register</content>
+	</section>
+
+	<section name="author">
+	</section>
+
+	<section name="title">
+		<content language="sk">Register</content>
+		<content language="en">Register</content>
+		<content language="hu">Register</content>
+	</section>
+
+	<section name="description">
+		<content language="sk">Register</content>
+		<content language="en">Register</content>
+		<content language="hu">Register</content>
+	</section>
+
+</mod_meta_info>

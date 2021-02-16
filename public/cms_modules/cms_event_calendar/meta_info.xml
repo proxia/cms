@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<mod_meta_info>
+
+	<section name="code">
+		<content language="independent">CMS_EventCalendar</content>
+	</section>
+
+	<section name="author">
+		<content language="independent"></content>
+	</section>
+
+	<section name="title">
+		<content language="sk">Kalendar podujati</content>
+		<content language="en">Event calendar</content>
+		<content language="hu">Event calendar</content>
+	</section>
+
+	<section name="description">
+		<content language="sk">Kalendar podujati</content>
+		<content language="en">Event calendar</content>
+		<content language="hu">Event calendar</content>
+	</section>
+
+</mod_meta_info>

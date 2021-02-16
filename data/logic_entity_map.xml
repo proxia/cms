@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<logic_entity_map>
+
+	<module name="core">
+
+		<entity id="1" name="Menu" valid_privileges="31" />
+		<entity id="2" name="Trash" valid_privileges="41" />
+		<entity id="3" name="Archive" valid_privileges="43" />
+		<entity id="4" name="Language Manager" valid_privileges="21" />
+
+		<entity id="5" name="Article Manager" valid_privileges="31">
+			<subentity id="50001" name="Mark As News" valid_privileges="1" />
+			<subentity id="50002" name="Bind To Frontpage" valid_privileges="1" />
+			<subentity id="50003" name="Bind To Menu" valid_privileges="1" />
+			<subentity id="50004" name="Bind To Category" valid_privileges="1" />
+		</entity>
+
+		<entity id="6" name="Category Manager" valid_privileges="31">
+			<subentity id="60001" name="Bind To Menu" valid_privileges="1" />
+			<subentity id="60002" name="Bind To Category" valid_privileges="1" />
+		</entity>
+
+		<entity id="7" name="Weblink Manager" valid_privileges="31">
+			<subentity id="70001" name="Bind To Menu" valid_privileges="1" />
+			<subentity id="70002" name="Bind To Category" valid_privileges="1" />
+		</entity>
+
+		<entity id="8" name="User Manager" valid_privileges="23" />
+		<entity id="9" name="Media Manager" valid_privileges="1" />
+		<entity id="10" name="News Manager" valid_privileges="27" />
+		<entity id="11" name="Frontpage Manager" valid_privileges="27" />
+		<entity id="12" name="Group Manager" valid_privileges="31" />
+
+	</module>
+
+	<module name="CMS_Forum">
+		<entity id="100" name="Forum" valid_privileges="31" />
+	</module>
+
+	<module name="CMS_Inquiry">
+		<entity id="101" name="Inquiry" valid_privileges="31" />
+	</module>
+
+	<module name="CMS_Sitemap">
+		<entity id="102" name="Sitemap" valid_privileges="17" />
+	</module>
+	
+	<module name="CMS_Gallery">
+		<entity id="103" name="Gallery" valid_privileges="31" />
+	</module>
+	
+	<module name="CMS_Newsletter">
+		<entity id="104" name="Newsletter" valid_privileges="31" />
+	</module>
+
+	<module name="CMS_Catalog">
+		<entity id="105" name="Catalog" valid_privileges="31">
+			<subentity id="1050001" name="Branch" valid_privileges="31" />
+			<subentity id="1050002" name="Products" valid_privileges="31" />
+		</entity>>
+	</module>
+	
+	<module name="CMS_Company">
+		<entity id="106" name="Company" valid_privileges="31" />
+	</module>
+	
+	<module name="CMS_Job">
+		<entity id="107" name="Job" valid_privileges="31" />
+	</module>
+	
+	<module name="CMS_Guestbook">
+		<entity id="108" name="Guestbook" valid_privileges="31" />
+	</module>
+	
+	<module name="CMS_EventCalendar">
+		<entity id="109" name="EventCalendar" valid_privileges="31" />
+	</module>
+	
+	<module name="CMS_BannerManager">
+		<entity id="110" name="BannerManager" valid_privileges="31" />
+	</module>
+	
+	<module name="CMS_Register">
+		<entity id="111" name="Register" valid_privileges="31" />
+	</module>
+	
+</logic_entity_map>

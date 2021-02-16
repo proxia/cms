@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<configuration>
+
+	<section name="general">
+		<option name="email_webmaster" value="web-ma-ster@site.com" type="string"/>
+	</section>
+
+	<section name="site">
+		<option name="name" value="::marians" type="string"/>
+		<option name="description" value="" type="string"/>
+		<option name="keywords" value="" type="string"/>
+		<option name="url" value="" type="string"/>
+		<option name="default_site_language" value="sk" type="string"/>
+		<option name="is_offline" value="false" type="bool"/>
+		<option name="logo" value="" type="string"/>
+		<option name="offline_message" value="-" type="string"/>
+		<option name="show_print_bar" value="true" type="bool"/>
+		<option name="show_most_read_articles" value="true" type="bool"/>
+		<option name="show_recent_articles" value="true" type="bool"/>
+		<option name="show_article_atachments" value="true" type="bool"/>
+		<option name="show_article_creation_date" value="false" type="bool"/>
+		<option name="show_article_author" value="false" type="bool"/>
+		<option name="show_article_pdf" value="false" type="bool"/>
+		<option name="show_article_print" value="false" type="bool"/>
+		<option name="show_article_email" value="false" type="bool"/>
+	</section>
+
+	<section name="proxia">
+		<option name="records_per_page" value="100" type="numeric"/>
+		<option name="default_local_language" value="sk" type="string"/>
+		<option name="prefered_language" value="sk" type="string"/>
+		<option name="prefered_editor" value="tinymce_full" type="string"/>
+		<option name="prefered_editor_for_desc" value="tinymce_full" type="string"/>
+		<option name="prefered_media_view" value="image" type="string"/>
+		<option name="prefered_expand_tree" value="hidden" type="numeric"/>
+		<option name="columns_display" value="full" type="string"/>
+		<option name="upload_max_size" value="6000000" type="numeric"/>
+		<option name="show_history_table" value="true" type="bool"/>
+	</section>
+
+</configuration>

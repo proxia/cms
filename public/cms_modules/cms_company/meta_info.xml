@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<mod_meta_info>
+
+	<section name="code">
+		<content language="independent">CMS_Company</content>
+	</section>
+
+	<section name="author">
+		<content language="independent"></content>
+	</section>
+
+	<section name="title">
+		<content language="sk">Firmy</content>
+		<content language="en">Company</content>
+		<content language="hu">Cégek</content>
+	</section>
+
+	<section name="description">
+		<content language="sk">Zoznam firiem</content>
+		<content language="en">Company</content>
+		<content language="hu">Cég jegyzék</content>
+	</section>
+
+</mod_meta_info>

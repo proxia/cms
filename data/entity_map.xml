@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<entity_map>
+
+	<module name="core">
+		<entity id="1" class_name="CMS_Category" />
+		<entity id="2" class_name="CMS_Article" />
+
+		<entity id="4" class_name="CMS_Menu" />
+		<entity id="5" class_name="CMS_Weblink" />
+		<entity id="6" class_name="CMS_User" />
+		<entity id="7" class_name="CMS_Group" />
+		<entity id="8" class_name="CMS_Attachment" />
+		<entity id="9" class_name="CMS_AdminUser" />
+		<entity id="10" class_name="CMS_Template" />
+	</module>
+
+	<module name="CMS_Catalog">
+		<entity id="100" class_name="CMS_Catalog" />
+		<entity id="101" class_name="CMS_Catalog_Product" />
+		<entity id="102" class_name="CMS_Catalog_Price" />
+		<entity id="103" class_name="CMS_Catalog_AttributeDefinition" />
+		<entity id="104" class_name="CMS_Catalog_Branch" />
+		<entity id="105" class_name="CMS_Catalog_ProductAttribute" />
+		<entity id="106" class_name="CMS_Catalog_AttributeGroup" />		
+	</module>
+
+	<module name="CMS_Inquiry">
+		<entity id="110" class_name="CMS_Inquiry" />
+		<entity id="111" class_name="CMS_Inquiry_Question" />
+		<entity id="112" class_name="CMS_Inquiry_Answer" />
+	</module>
+
+	<module name="CMS_Forum">
+		<entity id="120" class_name="CMS_Forum" />
+	</module>
+
+	<module name="CMS_Quiz">
+		<entity id="130" class_name="CMS_Quiz" />
+		<entity id="131" class_name="CMS_Quiz_Question" />
+		<entity id="132" class_name="CMS_Quiz_Answer" />
+		<entity id="133" class_name="CMS_Quiz_UserAnswer" />
+		<entity id="134" class_name="CMS_Quiz_ResultEntry" />
+		<entity id="135" class_name="CMS_Quiz_ArchivedQuiz" />
+	</module>
+
+	<module name="CMS_Job">
+		<entity id="140" class_name="CMS_Job" />
+		<entity id="141" class_name="CMS_Job_SearchAd" />
+		<entity id="142" class_name="CMS_Job_OfferAd" />
+	</module>
+
+	<module name="CMS_Company">
+		<entity id="150" class_name="CMS_Company" />
+	</module>
+
+	<module name="CMS_Newsletter">
+		<entity id="160" class_name="CMS_Newsletter" />
+		<entity id="161" class_name="CMS_Newsletter_DistributionList" />
+	</module>
+
+	<module name="CMS_Gallery">
+		<entity id="170" class_name="CMS_Gallery" />
+	</module>
+	
+	<module name="CMS_Guestbook">
+		<entity id="180" class_name="CMS_Guestbook" />
+		<entity id="181" class_name="CMS_Guestbook_Entry" />
+	</module>
+	
+	<module name="CMS_BannerManger">
+		<entity id="190" class_name="CMS_BannerManger_Banner" />
+	</module>
+	
+	<module name="CMS_Register">
+		<entity id="200" class_name="CMS_Register" />
+		<entity id="201" class_name="CMS_Register_Entry" />
+	</module>
+	
+	<module name="CMS_EventCalendar">
+		<entity id="210" class_name="CMS_EventCalendar_Event" />
+	</module>
+	
+	<module name="CMS_Map">
+		<entity id="220" class_name="CMS_Map_Area" />
+		<entity id="221" class_name="CMS_Map_Attraction" />
+		<entity id="222" class_name="CMS_Map_Route" />
+		<entity id="223" class_name="CMS_Map_Node" />
+		<entity id="224" class_name="CMS_Map_Connection" />
+		<entity id="225" class_name="CMS_Map_Marker" />
+	</module>
+	
+	<module name="CMS_Course">
+		<entity id="230" class_name="CMS_Course" />
+		<entity id="231" class_name="CMS_Course_Lesson" />
+		<entity id="232" class_name="CMS_Course_Lecture" />
+		<entity id="233" class_name="CMS_Course_Checkpoint" />
+		<entity id="234" class_name="CMS_Course_Glossary" />
+		<entity id="235" class_name="CMS_Course_Glossary_Entry" />
+	</module>
+	
+	<module name="CMS_WLS">
+		<entity id="240" class_name="CMS_WLS_Class" />
+		<entity id="241" class_name="CMS_WLS_User_Type" />
+		<entity id="242" class_name="CMS_WLS_Subject" />
+		<entity id="243" class_name="CMS_WLS_RunningCourse" />
+	</module>
+	
+	<module name="CMS_School">
+		<entity id="260" class_name="CMS_School" />
+		<entity id="261" class_name="CMS_School_Attendance" />
+		<entity id="262" class_name="CMS_School_StudentRating" />
+		<entity id="263" class_name="CMS_School_StudentOveralRating" />
+		<entity id="264" class_name="CMS_School_Rating" />
+		<entity id="265" class_name="CMS_School_Timetable" />
+		<entity id="266" class_name="CMS_School_Classroom" />
+		<entity id="267" class_name="CMS_School_PrivateMessage" />
+		<entity id="268" class_name="CMS_School_Communication" />
+	</module>
+
+	<module name="CMS_Configurator">
+		<entity id="270" class_name="CMS_Configurator" />
+	</module>
+	
+</entity_map>

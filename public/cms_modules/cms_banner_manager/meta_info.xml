@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<mod_meta_info>
+
+	<section name="code">
+		<content language="independent">CMS_BannerManager</content>
+	</section>
+
+	<section name="author">
+		<content language="independent"></content>
+	</section>
+
+	<section name="title">
+		<content language="sk">Banner</content>
+		<content language="en">Banner</content>
+		<content language="hu">Banner</content>
+	</section>
+
+	<section name="description">
+		<content language="sk">Katalóg produktov</content>
+		<content language="en">Product catalogue</content>
+		<content language="hu">Termékek katalógusa</content>
+	</section>
+
+</mod_meta_info>

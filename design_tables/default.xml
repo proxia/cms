@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+
+	<section name="general">
+		<option show_tr_line="true" />
+		<option show_is_trash="false" />
+		<option img_path="images/" />
+		<option form_name="form1"/>
+		<option table_properties='class="tb_list2"' />
+		<option head_row_properties='class="tr_header"' />
+		<option line_row_properties='class="td_link_space"' />
+		<option list_row_properties="onmouseover=&quot;pozadie('#f5f5f5',this)&quot; onmouseout=&quot;pozadie('#ffffff',this)&quot;" />
+	</section>
+
+	<section name="NUMBER">
+		<option title="#" />
+	</section>
+
+	<section name="CHECKBOX">
+		
+	</section>
+	
+	<section name="ENTITY_FLAG">
+		
+	</section>
+	
+	<section name="TITLE">
+		<title>Názov</title>
+		<onclick>true</onclick>
+		<view_language_tag>true</view_language_tag>
+
+	</section>
+
+	<section name="TRANSLATION">
+		
+	</section>
+	
+	<section name="VISIBILITY">
+		
+	</section>
+	
+	<section name="ORDER">
+		
+	</section>
+	
+	<section name="ID">
+		
+	</section>
+	
+	<section name="PARENT_MENU">
+		
+	</section>
+	
+	<section name="PARENT_CATEGORY">
+		
+	</section>
+	
+	<section name="ENTITY_NAME">
+		
+	</section>
+	
+</configuration>

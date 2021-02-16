@@ -1,0 +1,41 @@
+version: "3"
+services:
+    webserver:
+        image: nginx:1.19-alpine
+        container_name: cms-webserver
+        working_dir: /application
+        volumes:
+            - ./docker/services/webserver/nginx.conf:/etc/nginx/conf.d/default.conf
+            - ./:/application
+        ports:
+            - "61000:80"
+            - "61001:443"
+
+    backend:
+        build: docker/services/backend
+        container_name: cms-backend
+        working_dir: /application
+        volumes:
+            - ./:/application
+            - ./docker/volumes/config/config.php:/application/config/config.php
+        environment:
+            - DATABASE_URL="mysql://cms:cms@cms-database:3306/cms"
+
+    database:
+        image: mariadb:10
+        container_name: cms-database
+        volumes:
+            - ./docker/volumes/database:/var/lib/mysql
+        environment:
+            - MYSQL_ROOT_PASSWORD=root
+            - MYSQL_DATABASE=cms
+            - MYSQL_USER=cms
+            - MYSQL_PASSWORD=cms
+        ports:
+            - "61002:3306"
+
+#    mailhog:
+#        image: mailhog/mailhog:latest
+#        container_name: cms-mailhog
+#        ports:
+#            - "61003:8025"

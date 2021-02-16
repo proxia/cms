@@ -1,0 +1,141 @@
+
+div#SortTable
+{
+text-align:center;
+}
+
+div#SortTable ul
+{
+	margin: 1.5em;
+
+	height: 475px;
+	padding-left:0px;
+
+	overflow: auto;
+
+	background-color: white;
+
+	border: 1px solid silver;
+}
+
+div#SortTable ul#Content
+{
+	width: 70%;
+	clear: both;
+	list-style-type:none;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+div#SortTable ul#Buffer { float: right; }
+
+div#SortTable ul li
+{
+	margin: 3px;
+
+	border: 1px solid rgb(222, 67, 85);
+}
+
+div#SortTable ul li.selected
+{
+	background-color: rgb(237, 79, 79);
+}
+
+div#SortTable ul li > div
+{
+	float: left;
+
+	height: 80px;
+
+	line-height: 80px;
+
+	vertical-align: middle;
+}
+
+div#SortTable ul li.catalog > div
+{
+	float: left;
+	height: 30px;
+	line-height: 30px;
+
+	vertical-align: middle;
+}
+
+div#SortTable ul li div.image_frame
+{
+	margin: 2px;
+
+	width: 80px;
+
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	background-color: White;
+}
+
+div#SortTable ul li div.column
+{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+div#SortTable ul li div.controlls
+{
+	float: right;
+	line-height:30px;
+}
+
+div#SortTable ul li div.controlls div.left
+{
+	float: left;
+
+	line-height: 1em;
+}
+
+div#SortTable ul li div.controlls div.right
+{
+	float: right;
+
+	line-height: 1em;
+}
+
+div#SortTable ul li div.controlls img
+{
+
+	margin: 7px 5px;
+
+	cursor: pointer;
+}
+
+div#SortTable ul li div.controlls input
+{
+	width: 2em;
+	text-align: center;
+	vertical-align:top;
+	margin: 7px 0;
+	border:none;
+}
+
+div#SortTable ul li span.spacer
+{
+	display: block;
+
+	clear: both;
+}
+
+div#SortTable div#ButtonGroupTop
+{
+	padding-top: 10em;
+}
+
+div#SortTable div#ButtonGroupTop img, div#SortTable div#ButtonGroupBottom img
+{
+	margin: 0.8em;
+	padding: 5px;
+
+	cursor: pointer;
+
+	background-color: white;
+
+	border: 1px solid silver;
+}

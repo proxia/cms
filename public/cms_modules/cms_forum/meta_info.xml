@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<mod_meta_info>
+
+	<section name="code">
+		<content language="independent">CMS_Forum</content>
+	</section>
+
+	<section name="author">
+		<content language="independent"></content>
+	</section>
+
+	<section name="title">
+		<content language="sk">Forum</content>
+		<content language="en">Forum</content>
+		<content language="hu">Fórum</content>
+	</section>
+
+	<section name="description">
+		<content language="sk">Diskusné fórum</content>
+		<content language="en">Popis fora en</content>
+		<content language="hu">Vita fórum</content>
+	</section>
+
+</mod_meta_info>
