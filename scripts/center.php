@@ -2773,7 +2773,7 @@ switch ($_REQUEST["cmd"]) {
 			$GLOBALS["smarty"]->assign("article_recent",$article_recent);
 			$GLOBALS["smarty"]->assign("statistics_list_vektor",$statistics_list_vektor);
 			$GLOBALS["smarty"]->assign("registered_users",$registeredUsers);
-			$GLOBALS["smarty"]->assign("article_my",$article_my);
+			$GLOBALS["smarty"]->assign("article_my",$article_my ?? null);
 			$GLOBALS["smarty"]->display("intro.tpl");
 
 		}
