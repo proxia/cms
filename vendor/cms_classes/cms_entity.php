@@ -156,8 +156,13 @@ STRING;
 
 			########################################################################################
 
-			if(in_array($var_name, $this->column_list[$this->main_table]))
+			if(in_array($var_name, $this->column_list[$this->main_table])) {
+				if (!$var_name or !isset($this->current_data[$this->main_table][$var_name])) {
+					return null;
+				}
+
 				return $this->current_data[$this->main_table][$var_name] == 'NULL' ? null : $this->current_data[$this->main_table][$var_name];
+			}
 
 			elseif(!is_null($this->ext_table))
 			{

@@ -1003,7 +1003,7 @@ class TPL_List
 		$cell_id = $this->COL[strtoupper($cell_name)];
 		$property_name = strtolower($property_name);
 		
-		return $this->column[$cell_id][$property_name];
+		return $this->column[$cell_id][$property_name] ?? null;
 	}
 	###################################################################################################
 	
@@ -1018,9 +1018,9 @@ class TPL_List
 		
 		$string = str_replace("<ID>", $this->current_object->getId(), $string);
 		
-		$string = str_replace("<LANGUAGE>", $input['language_id'], $string);
+		$string = str_replace("<LANGUAGE>", ($input['language_id'] ?? null), $string);
 		
-		$string = str_replace("<VISIBILITY_NEQ>", $input['visibility_neq'], $string);
+		$string = str_replace("<VISIBILITY_NEQ>", ($input['visibility_neq'] ?? null), $string);
 		
 		$string = str_replace("<INCREMENT>", $this->increment_id, $string);
 		
@@ -1045,6 +1045,7 @@ class TPL_List
 				$start = strpos($string, $pattern);
 				$length = strpos ($string, ">", $start)+1 - $start;
 				$name = substr($string, $start + $pattern_length, $length - $pattern_length - 1);
+				$name_array = null;
 				
 				while (strpos($name, "[")){
 					$array_start = strpos($name, "[");
@@ -1056,7 +1057,7 @@ class TPL_List
 				$pattern_mask = substr($pattern,1);
 				$pattern_mask = substr($pattern_mask,0,-1);
 				
-				$name_string = "\$output = \$".$pattern_mask."['".$name."']".$name_array.";";
+				$name_string = "\$output = \$".$pattern_mask."['".$name."'] ?? null".$name_array.";";
 
 				eval($name_string);
 
