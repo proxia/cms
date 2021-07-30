@@ -623,7 +623,7 @@ function insert_getOptionListMappedCategory($zdroj){
 
 
 							$top_cat_id = $cat_value->getId();
-							if ($zdroj['zakaz'] != $top_cat_id){
+							if (isset($zdroj['zakaz']) and $zdroj['zakaz'] != $top_cat_id){
 									echo "<option $disabled value=\"$top_cat_id\"";
 									if(CMS_ProjectConfig::getSingleton()->checkModuleAvailability('CMS_Gallery')){
 										if ($cat_value instanceof CMS_Gallery)
@@ -634,8 +634,8 @@ function insert_getOptionListMappedCategory($zdroj){
 								}
 							$send['adr'] = $top_cat_id;
 							$send['uroven'] = 1;
-							$send['select'] = $zdroj['select'];
-							$send['zakaz'] = $zdroj['zakaz'];
+							$send['select'] = $zdroj['select'] ?? null;
+							$send['zakaz'] = $zdroj['zakaz'] ?? null;
 							getOptionListMappedCategoryToMenu($send);
 						}
 
@@ -786,7 +786,7 @@ function insert_getOptionListFreeCategory($zdroj){
 
 		###################################################
 
-			if ($zdroj['zakaz'] != $value->getId()){
+			if (isset($zdroj['zakaz']) and $zdroj['zakaz'] != $value->getId()){
 
 					$value->setContextLanguage($GLOBALS['localLanguage']);
 					$defaultView = 0;
@@ -1445,7 +1445,7 @@ function setReturnPoint($layer = 0, $stop = array()){
 		$stop[]="form_text_name";
 	}
 
-	if (is_array($_SESSION['returnParameter'])){
+	if (isset($_SESSION['returnParameter']) and is_array($_SESSION['returnParameter'])){
 		$maxlayer = count ($_SESSION['returnParameter'])-1;
 
 		if ($layer < $maxlayer){
@@ -1494,15 +1494,7 @@ function insert_getReturnParameter($input){
 	{
 		list($theme_name, $template_name) = explode('.', $block_path);
 
-		if(extension_loaded('ionCube Loader'))
-		{
-			if(ioncube_file_is_encoded())
-				$tpl_source = ioncube_read_file("tpl_resources/{$template_name}.tpl");
-			else
- 				$tpl_source = file_get_contents("tpl_resources/{$template_name}.tpl");
-		}
-		else
-			$tpl_source = file_get_contents("tpl_resources/{$template_name}.tpl");
+		$tpl_source = file_get_contents("../tpl_resources/{$template_name}.tpl");
 
 		return true;
 	}

@@ -1,0 +1,11 @@
+liip_imagine:
+    driver: "gd"
+
+    loaders:
+        default:
+            filesystem:
+                data_root: '%env(MEDIA_DIR)%'
+
+    filter_sets:
+        preview:
+            quality: 75

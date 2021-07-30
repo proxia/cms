@@ -520,7 +520,7 @@ if($_REQUEST['cmd'] == 27){
 		// upload file in filemanager
 if($_REQUEST['cmd'] == 28){
 	createButton('tb_toolbar','validateForm','form1',0,0,'#','go','list','all_m_save.png',tr('Uložiť'),tr('Uložiť'));
-	if(!$_REQUEST['zip'] )
+	if(!($_REQUEST['zip'] ?? null) )
 		createButton('tb_toolbar','addRow','addPosition','true',0,'#','addPosition','true','file_m_row_add.png',tr('Ďaľší súbor'),tr('Ďaľší súbor'));
 	createButton('tb_toolbar','','','','','./?cmd=26','','','all_m_back.png',tr('Späť'),tr('Späť'));
 	if ($is_help)

@@ -2417,7 +2417,7 @@ switch ($_REQUEST["cmd"]) {
 			if (!$_GET['m_directory']) $_GET['m_directory']="/";
 			$directory = urldecode ($_GET['m_directory']);
 			$GLOBALS["smarty"]->assign("m_directory",$directory);
-			if ($_GET['zip'])
+			if ($_GET['zip'] ?? null)
 				$GLOBALS["smarty"]->display("media_new_files_zip.tpl");
 			else	
 				$GLOBALS["smarty"]->display("media_new_file.tpl");
@@ -2773,7 +2773,7 @@ switch ($_REQUEST["cmd"]) {
 			$GLOBALS["smarty"]->assign("article_recent",$article_recent);
 			$GLOBALS["smarty"]->assign("statistics_list_vektor",$statistics_list_vektor);
 			$GLOBALS["smarty"]->assign("registered_users",$registeredUsers);
-			$GLOBALS["smarty"]->assign("article_my",$article_my);
+			$GLOBALS["smarty"]->assign("article_my",$article_my ?? null);
 			$GLOBALS["smarty"]->display("intro.tpl");
 
 		}

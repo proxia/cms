@@ -32,7 +32,7 @@ if($type == 'exception')
 
 	$class_smarty->assign('throwed_from_file', $throwed_from_trace['file']);
 	$class_smarty->assign('throwed_from_line', $throwed_from_trace['line']);
-	$class_smarty->assign('throwed_from_by_call', $throwed_from_trace['class'].' '.$throwed_from_trace['type'].' '.$throwed_from_trace['function']);
+	$class_smarty->assign('throwed_from_by_call', ($throwed_from_trace['class'] ?? null).' '.($throwed_from_trace['type'] ?? null).' '.$throwed_from_trace['function']);
 
 	$class_smarty->assign('hardcoded_in_file', $trace[0]['file']);
 	$class_smarty->assign('hardcoded_in_line', $trace[0]['line']);

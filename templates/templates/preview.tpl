@@ -1,7 +1,7 @@
 {php}
 $base_path = urldecode($_GET['path']);
 
-$GLOBALS["smarty"]->assign("paste",$_GET['paste']);
+$GLOBALS["smarty"]->assign("paste",$_GET['paste'] ?? null);
 $GLOBALS["smarty"]->assign("path","$base_path");
 
 $path = "{$GLOBALS['config']['mediadir']}$base_path";
@@ -50,9 +50,9 @@ else {
 <table width="300" height="200" align="center" border="0">
 	<tr>
 		<td align="center"><center>
-		{if $file_stat.size < 153600}
+		{if $file_stat.size < 1536000}
 			{if (($ext == "jpg") || ($ext == "jpeg") || ($ext == "gif") || ($ext == "png"))}
-					<a href="{$path}" target="_blank"><img src="img.php?path={$image_path}&w=150"></a>
+					<a href="{$path}" target="_blank"><img src="/image-preview?path={$image_path}&w=150"></a>
 			{elseif $ext == "pdf"}
 				<a target="_blank" href="{$path}"><img src="images/pdf16.png"></a>
 			{elseif $ext == "doc"}

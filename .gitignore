@@ -15,3 +15,6 @@ dump.sql
 /var/
 /vendor-new/
 ###< symfony/framework-bundle ###
+###> liip/imagine-bundle ###
+/public/media/cache/
+###< liip/imagine-bundle ###

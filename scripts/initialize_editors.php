@@ -126,7 +126,6 @@
 								proxia_project_name : "'.$project_name.'",
 								proxia_element_name : "article_text",
 								proxia_path : "'.$path_prefix.'",
-								proxia_combo_theme_value : "'.$combo_theme_value.'",
 								debug : false,
 								entity_encoding : "raw",
 								extended_valid_elements : "a[name|href|target|title|onclick|class|style|rel],img[class|src|border=0|alt|title|hspace|vspace|width|height|align|onmouseover|onmouseout|name|obj|param|embed|xflashvars|style],hr[class|width|size|noshade],font[face|size|color|style],span[class|align|style],iframe[width|height|frameborder|scrolling|marginheight|marginwidth|src|align],script[language]",

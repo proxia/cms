@@ -1,7 +1,7 @@
 {php}
 $path = urldecode($_GET['path']);
 $GLOBALS["smarty"]->assign("path_prilep",$path);
-$GLOBALS["smarty"]->assign("paste",$_GET['paste']);
+$GLOBALS["smarty"]->assign("paste",$_GET['paste'] ?? null);
 $GLOBALS["smarty"]->assign("path","..".$GLOBALS['project_folder']."/".$_SESSION['user']['name']."/mediafiles$path");
 $path = "..".$GLOBALS['project_folder']."/".$_SESSION['user']['name']."/mediafiles$path";
 error_reporting(0);

@@ -2089,17 +2089,23 @@ $ftp = 0;
 			}
 
 		if ($_POST['fileinfolder']){
-				foreach ($_FILES as $file => $value)
-					$_FILES[$file]['name'] =  utf2ascii($_FILES[$file]['name']);
+				$targetPath = $_POST['fileinfolder'];
 
-				if(!$_POST['zip'])
+				if (str_starts_with($_POST['fileinfolder'], $GLOBALS['config']['mediadir'])) {
+					$targetPath = str_replace($GLOBALS['config']['mediadir'], '', $targetPath);
+				}
+
+				foreach ($_FILES as $file => $value) {
+					$_FILES[$file]['name'] =  utf2ascii($_FILES[$file]['name']);
+				}
+
+				if(!($_POST['zip'] ?? null))
 				{
 					$upload = new CN_FileUpload();
-					$upload -> setTargetDirectory("{$GLOBALS['config']['mediadir']}/{$_POST['fileinfolder']}");
+					$upload -> setTargetDirectory("{$GLOBALS['config']['mediadir']}/$targetPath");
 					$upload -> setMaxSize(getConfig('proxia','upload_max_size'));
 					$upload -> upload();
-					//$dir = urlencode(str_replace("{$GLOBALS['config']['mediadir']}","",$_POST['fileinfolder']));
-					Header("Location: ./?cmd=26&m_directory=$dir");
+					Header("Location: ./?cmd=26");
 					exit;
 				}else{
 					//$project_folder = "..".$GLOBALS['project_folder']."/".$_SESSION['user']['name'];
