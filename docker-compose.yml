@@ -1,4 +1,9 @@
 version: "3"
+
+volumes:
+    database:
+        driver: local
+
 services:
     webserver:
         image: nginx:1.19-alpine
@@ -25,7 +30,7 @@ services:
         image: mariadb:10
         container_name: cms-database
         volumes:
-            - ./docker/volumes/database:/var/lib/mysql
+            - database:/var/lib/mysql
         environment:
             - MYSQL_ROOT_PASSWORD=root
             - MYSQL_DATABASE=cms
@@ -33,9 +38,3 @@ services:
             - MYSQL_PASSWORD=cms
         ports:
             - "61002:3306"
-
-#    mailhog:
-#        image: mailhog/mailhog:latest
-#        container_name: cms-mailhog
-#        ports:
-#            - "61003:8025"

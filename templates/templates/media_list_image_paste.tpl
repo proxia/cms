@@ -31,7 +31,7 @@
 			{php}
 			$path = $GLOBALS['smarty']->get_template_vars('path');
 			$GLOBALS["smarty"]->assign("path_prilep",$path);
-			$GLOBALS["smarty"]->assign("paste",$_GET['paste']);
+			$GLOBALS["smarty"]->assign("paste",$_GET['paste'] ?? null);
 			$GLOBALS["smarty"]->assign("path","{$GLOBALS['config']['mediadir']}$path");
 			$relative_path = "$path";
 			$path = "{$GLOBALS['config']['mediadir']}$path";
@@ -39,7 +39,7 @@
 			$GLOBALS["smarty"]->assign("path",$relative_path);
 			{/php}<br />
 			<a href="javascript:showPreview('{insert name=url_decode l1=$m_directory l2=$media_id.flink}')">
-              <img src="img.php?path={$path}&w=50"><br />
+              <img src="/image-preview?path={$path}&w=50"><br />
               {$media_id.name}<br />
               <a title="prilep obrázok" href="javascript:prilep('{$m_directory}{$media_id.flink}')"><img src="images/paste.gif" width="21" height="21" border="0"></a>
             </a><br /><br />

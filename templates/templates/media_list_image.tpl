@@ -34,7 +34,7 @@
 			
 		
 			$GLOBALS["smarty"]->assign("path_prilep",$path);
-			$GLOBALS["smarty"]->assign("paste",$_GET['paste']);
+			$GLOBALS["smarty"]->assign("paste",$_GET['paste'] ?? null);
 			$GLOBALS["smarty"]->assign("path","{$GLOBALS['config']['mediadir']}$path");
 			$relative_path = "$path";
 			$path = "{$GLOBALS['config']['mediadir']}$path";
@@ -50,7 +50,7 @@
 			{/php}<br />
 			<a href="javascript:showPreview('{insert name=url_decode l1=$m_directory l2=$media_id.flink}')">
               {if $file_stat.size < 153600}
-              <img src="img.php?path={$path}&w=50">
+              <img src="/image-preview?path={$path}&w=50">
               {else}
               <img src="images/photo_s.png">
               {/if}

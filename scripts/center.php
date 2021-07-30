@@ -2417,7 +2417,7 @@ switch ($_REQUEST["cmd"]) {
 			if (!$_GET['m_directory']) $_GET['m_directory']="/";
 			$directory = urldecode ($_GET['m_directory']);
 			$GLOBALS["smarty"]->assign("m_directory",$directory);
-			if ($_GET['zip'])
+			if ($_GET['zip'] ?? null)
 				$GLOBALS["smarty"]->display("media_new_files_zip.tpl");
 			else	
 				$GLOBALS["smarty"]->display("media_new_file.tpl");
