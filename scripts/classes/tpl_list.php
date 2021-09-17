@@ -2444,13 +2444,8 @@ class TPL_List
 	###################################################################################################
 	
 	private function cellListEntity_flag(){
-		$html = "<td";
-		
-		if ($this->getColumnProperty($cell_name,'list_properties'))
-			$html .= " ".$this->getColumnProperty($cell_name,'list_properties');
-		
-		$html .= ">";
-		
+		$html = "<td>";
+
 		$image_path = $this->img_path.getObjectType($this->current_object,"realname")."_s.gif";
 		if (is_file($image_path))
 			$html .= "<img src=\"$image_path\" />";
@@ -2562,21 +2557,11 @@ class TPL_List
 			$html .= "<a href=\"$href\">";
 		}
 		
-		if ($defaultView === TRUE)
-			$html .= $GLOBALS['defaultViewStartTag'];
-		
 		if ($this->getColumnProperty($cell_name,'list_wordwrap'))
-			
 			$html .= wordwrap($this->current_object->getName(),$this->getColumnProperty($cell_name,'list_wordwrap'),'<br />');
-		
 		else
-
 			$html .= $this->current_object->getName();
-		
-		
-		if ($defaultView === TRUE)
-			$html .= $GLOBALS['defaultViewEndTag'];
-			
+
 		if ( ($this->getColumnProperty($cell_name,'onclick') === TRUE) && ($this->getColumnProperty($cell_name,'href')) && ($this->getPrivileges($cell_name) === TRUE) )
 			$html .= "</a>";
 		
