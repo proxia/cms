@@ -3,25 +3,25 @@
     "type": "project",
     "license": "AGPL-3.0-only",
     "require": {
-        "php": ">=8.0",
+        "php": ">=8.4",
         "ext-ctype": "*",
         "ext-fileinfo": "*",
         "ext-gd": "*",
         "ext-gettext": "*",
         "ext-iconv": "*",
         "doctrine/annotations": "^1.13",
-        "liip/imagine-bundle": "^2.6",
-        "symfony/console": "5.3.*",
-        "symfony/dotenv": "5.3.*",
-        "symfony/flex": "^v1.13",
-        "symfony/framework-bundle": "5.3.*",
-        "symfony/monolog-bundle": "^3.7",
-        "symfony/yaml": "5.3.*"
+        "liip/imagine-bundle": "^2.13",
+        "symfony/console": "7.3.*",
+        "symfony/dotenv": "7.3.*",
+        "symfony/flex": "^v2.8",
+        "symfony/framework-bundle": "7.3.*",
+        "symfony/monolog-bundle": "^3.10",
+        "symfony/yaml": "7.3.*"
     },
     "require-dev": {
-        "symfony/stopwatch": "^5.3",
-        "symfony/twig-bundle": "^5.3",
-        "symfony/web-profiler-bundle": "^5.3"
+        "symfony/stopwatch": "7.3.*",
+        "symfony/twig-bundle": "^7.3",
+        "symfony/web-profiler-bundle": "7.3.*"
     },
     "config": {
         "optimize-autoloader": true,
@@ -29,7 +29,10 @@
             "*": "dist"
         },
         "sort-packages": true,
-        "vendor-dir": "vendor-new"
+        "vendor-dir": "vendor-new",
+        "allow-plugins": {
+            "symfony/flex": true
+        }
     },
     "autoload": {
         "psr-4": {
@@ -69,7 +72,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "5.3.*"
+            "require": "7.3.*"
         }
     }
 }

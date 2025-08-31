@@ -38,7 +38,7 @@ class CN_Application extends CN_Singleton
 	{
 		if($bool)
 		{
-            error_reporting(E_ALL & ~E_STRICT & ~E_NOTICE);
+            error_reporting(E_ALL & ~E_NOTICE);
             ini_set('display_errors', 1);
 
 			$this->debug_mode = true;

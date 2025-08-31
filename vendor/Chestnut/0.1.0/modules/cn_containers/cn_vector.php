@@ -129,27 +129,31 @@ class CN_Vector implements Iterator, Countable
 		$this->reindex();
 	}
 
-
+    #[\ReturnTypeWillChange]
 	public function rewind()
 	{
 		reset($this->data);
 	}
 
+    #[\ReturnTypeWillChange]
 	public function current()
 	{
 		return current($this->data);
 	}
 
+    #[\ReturnTypeWillChange]
 	public function key()
 	{
 		return key($this->data);
 	}
 
+    #[\ReturnTypeWillChange]
 	public function next()
 	{
 		return next($this->data);
 	}
 
+    #[\ReturnTypeWillChange]
 	public function valid()
 	{
 		return ($this->current() !== false);
@@ -165,6 +169,7 @@ class CN_Vector implements Iterator, Countable
 		$this->data = $tmp_data;
 	}
 
+    #[\ReturnTypeWillChange]
     public function count()
     {
         return count($this->data);

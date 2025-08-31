@@ -1,4 +1,4 @@
- <?php
+<?php
 
 if(!defined('CMS_USER_PHP')):
 	define('CMS_USER_PHP', TRUE);
@@ -18,12 +18,12 @@ class CMS_User extends CMS_Entity
 	{
 		if(is_null($this->main_table))
 			$this->main_table = 'users';
-					
+
 		if(is_null($this->id_column_name))
 			$this->id_column_name = 'user_id';
 
 		###########################################################################################
-	
+
 		parent::__construct(self::ENTITY_ID, $user_id);
 	}
 
@@ -34,11 +34,11 @@ class CMS_User extends CMS_Entity
 		$uid = $this->id;
 		$uid_length = strlen($uid);
 		$type_editor = CMS_UserLogin::REGULAR_USER;
-		
+
 		$articles = new CMS_ArticleList();
 		$articles->addCondition("`update_authors` REGEXP ':{s:7:\"user_id\";s:$uid_length:\"$uid\";s:9:\"user_type\";i:$type_editor;.*}'", null, null, true);
 		$articles->execute();
-		
+
 		return $articles;
 	}
 
@@ -46,7 +46,7 @@ class CMS_User extends CMS_Entity
 	{
 		if(is_null($date))
 			$date = date("Y-m-d H:i:s");
-			
+
 		$sql =<<<SQL
 		INSERT INTO
 			`statistics_user_login`
@@ -64,11 +64,11 @@ SQL;
 		$query = new CN_SqlQuery($sql);
 		$query->execute();
 	}
-	
+
 	public function saveLogoutDate($login_time)
 	{
 		$current_date = date("Y-m-d H:i:s");
-		
+
 		$sql = <<<SQL
 		UPDATE
 			`statistics_user_login`
@@ -85,7 +85,7 @@ SQL;
 	public function getLoginHistory($order="login_time")
 	{
 		$login_history = array();
-		
+
 		$sql =<<<SQL
 		SELECT
 			*
@@ -98,18 +98,18 @@ SQL;
 
 		$query = new CN_SqlQuery($sql);
 		$query->execute();
-		
+
 		while($query->next())
 		{
 			$record = $query->fetchRecord();
-			
+
 			$current_record = array();
 			$current_record['login_time'] = $record->getValue('login_time');
 			$current_record['logout_time'] = $record->getValue('logout_time');
-			
+
 			$login_history[] = $current_record;
 		}
-		
+
 		return $login_history;
 	}
 
@@ -181,7 +181,7 @@ SQL;
 
 	public function checkEditorPrivilege($entity_to_check, $deep_search=true)
 	{
-	
+
 		if($entity_to_check instanceof CMS_Article || $entity_to_check instanceof CMS_Weblink)
 		{
 			if($entity_to_check instanceof CMS_Weblink)
@@ -272,7 +272,7 @@ SQL;
 
 			if(in_array($this->id, $editors))
 				return false;
-	
+
 		}
 		return true;
 	}
@@ -454,18 +454,18 @@ SQL;
 		$this->id = $query->getInsertId();
 
 		###########################################################################################
-		
+
 		if(!is_null($this->ext_table))
 		{
-			$this->new_data[$this->ext_table][$this->id_column_name] = $this->id;			
-		
+			$this->new_data[$this->ext_table][$this->id_column_name] = $this->id;
+
 			$sql = $this->createExtQuery(CN_SqlQuery::TYPE_INSERT);
-			
+
 			$query = new CN_SqlQuery($sql);
 			$query->execute();
 
 		}
-		
+
 		###########################################################################################
 
 		$this->readData();
@@ -505,7 +505,7 @@ SQL;
 			$nickname = $this->new_data['users']['nickname'] == 'NULL' ? 'NULL' : "'{$this->new_data['users']['nickname']}'";
 		else
 			$nickname = $this->current_data['users']['nickname'] == 'NULL' ? 'NULL' : "'{$this->current_data['users']['nickname']}'";
-			
+
 		if(isset($this->new_data['users']['avatar']))
 			$avatar = $this->new_data['users']['avatar'] == 'NULL' ? 'NULL' : "'{$this->new_data['users']['avatar']}'";
 		else
@@ -633,7 +633,7 @@ SQL;
 		$query->execute();
 
 		###########################################################################################
-		
+
 		if(!is_null($this->ext_table))
 		{
 			$sql = $this->createExtQuery(CN_SqlQuery::TYPE_UPDATE);
@@ -642,7 +642,7 @@ SQL;
 			$query->execute();
 
 		}
-		
+
 		###########################################################################################
 
 		$this->readData();

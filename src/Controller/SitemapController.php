@@ -15,9 +15,7 @@ final class SitemapController extends AbstractController
         require_once(__DIR__ . '/../../public/__init__.php');
     }
 
-    /**
-     * @Route("/sitemap/save", methods={"POST"})
-     */
+    #[Route(path: '/sitemap/save', methods: ['POST'])]
     public function save(): Response
     {
         $siteMap = new Sitemap();

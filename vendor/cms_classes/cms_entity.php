@@ -1,4 +1,4 @@
- <?php
+<?php
 
 if(!defined('CMS_ENTITY_PHP')):
 	define('CMS_ENTITY_PHP', true);
@@ -132,11 +132,11 @@ STRING;
 
 	public function __call($name, $args)
 	{
-	
+
 		if(strpos($name, 'set') !== false)
 		{
 			$var_name = CN_Utils::getRealName(substr($name, 3));
-			
+
 //			if( $var_name == "price")
 //				var_dump($this->column_list[$this->main_table]);
 			########################################################################################
@@ -233,14 +233,14 @@ STRING;
 							$value = $record->getValue($column_name);
 
 							$this->current_data[$this->lang_table][$record->getValue('language')][$column_name] = is_null($value) ? 'NULL' : $value;
-							
+
 							if( $this->lang_table == 'articles_lang')
 							{
 								//var_dump($column_name);
 							}
 						}
 					}
-					
+
 				}
 
 				if(($to_read == CMS::READ_ALL && !is_null($this->ext_table)))
@@ -262,14 +262,14 @@ STRING;
 						}
 					}
 				}
-		
+
 			}
 			else
 			{
 				exit;
 			}
 		}
-		
+
 		//var_dump($this->current_data);
 	}
 
@@ -770,8 +770,8 @@ SQL;
 
 			foreach($column_list as $column)
 				$this->column_list[$this->lang_table][] = $column->getName();
-				
-			if($this->lang_table == 'articles_lang')	
+
+			if($this->lang_table == 'articles_lang')
 			{
 				//echo "<pre>";
 				//var_dump($this->column_list);
