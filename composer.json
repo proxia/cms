@@ -19,7 +19,6 @@
         "symfony/yaml": "7.3.*"
     },
     "require-dev": {
-        "symfony/stopwatch": "7.3.*",
         "symfony/twig-bundle": "^7.3",
         "symfony/web-profiler-bundle": "7.3.*"
     },
@@ -29,7 +28,6 @@
             "*": "dist"
         },
         "sort-packages": true,
-        "vendor-dir": "vendor-new",
         "allow-plugins": {
             "symfony/flex": true
         }
@@ -38,7 +36,11 @@
         "psr-4": {
             "App\\": "src/"
         },
-        "classmap": ["vendor/Chestnut/0.1.0"]
+        "classmap": [
+            "legacy/vendor/Chestnut/0.1.0",
+            "legacy/vendor/cms_classes",
+            "legacy/vendor/cms_modules"
+        ]
     },
     "autoload-dev": {
         "psr-4": {

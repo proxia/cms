@@ -11,7 +11,7 @@ RUN set -ex \
     opcache \
     zip
 
-RUN apk add --no-cache composer git 7zip
+RUN apk add --no-cache composer 7zip
 
 RUN set -e \
     && sed -i -e 's/\/usr\/bin\/php83/\/usr\/local\/bin\/php/g' /usr/bin/composer
