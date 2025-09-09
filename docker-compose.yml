@@ -1,29 +1,22 @@
-version: "3"
-
-volumes:
-    database:
-        driver: local
-
 services:
-    webserver:
-        image: nginx:1.19-alpine
-        container_name: cms-webserver
-        working_dir: /application
+    cms:
+        build: docker/services/backend
+        container_name: cms-cms
+        working_dir: /app
         volumes:
-            - ./docker/services/webserver/nginx.conf:/etc/nginx/conf.d/default.conf
-            - ./:/application
+            - ./:/app
+            - ./docker/volumes/config/config.php:/app/config/config.php
+            - caddy_data:/data
+            - caddy_config:/config
+            - /etc/localtime:/etc/localtime:ro
+            - /etc/timezone:/etc/timezone:ro
         ports:
             - "61000:80"
             - "61001:443"
-
-    backend:
-        build: docker/services/backend
-        container_name: cms-backend
-        working_dir: /application
-        volumes:
-            - ./:/application
-            - ./docker/volumes/config/config.php:/application/config/config.php
+            - "61001:443/udp"
         environment:
+            #- FRANKENPHP_CONFIG="worker ./public/index.php"
+            - SERVER_NAME=":80"
             - DATABASE_URL="mysql://cms:cms@cms-database:3306/cms"
 
     database:
@@ -38,3 +31,8 @@ services:
             - MYSQL_PASSWORD=cms
         ports:
             - "61002:3306"
+
+volumes:
+    database:
+    caddy_data:
+    caddy_config:

@@ -10,5 +10,7 @@ $config = array
 	'debug' => true,
 
 	// default, don't change
-	'mediadir' => '/application/mediafiles'
+	'mediadir' => '/app/mediafiles'
 );
+
+return $config;

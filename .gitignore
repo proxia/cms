@@ -1,6 +1,6 @@
 docker/volumes
-templates/cache
-templates/templates_c
+legacy/templates/cache
+legacy/templates/templates_c
 mediafiles
 .idea
 config/config.php
@@ -13,8 +13,13 @@ dump.sql
 /config/secrets/prod/prod.decrypt.private.php
 /public/bundles/
 /var/
-/vendor-new/
+/vendor/
 ###< symfony/framework-bundle ###
+
 ###> liip/imagine-bundle ###
 /public/media/cache/
 ###< liip/imagine-bundle ###
+
+###> phpstan/phpstan ###
+phpstan.neon
+###< phpstan/phpstan ###
