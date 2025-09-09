@@ -19,6 +19,7 @@
         "symfony/yaml": "7.3.*"
     },
     "require-dev": {
+        "phpstan/phpstan": "^2.1",
         "symfony/twig-bundle": "^7.3",
         "symfony/web-profiler-bundle": "7.3.*"
     },
@@ -66,7 +67,8 @@
         ],
         "post-update-cmd": [
             "@auto-scripts"
-        ]
+        ],
+        "stan": "vendor/bin/phpstan --memory-limit=2G analyse"
     },
     "conflict": {
         "symfony/symfony": "*"

@@ -3,9 +3,12 @@ declare(strict_types=1);
 
 namespace App\Sitemap;
 
+use CMS_Entity;
 use CN_Exception;
 use CN_Singleton;
 use CN_SqlQuery;
+use CN_Vector;
+use CN_VectorIterator;
 
 final class Sitemap extends CN_Singleton
 {
@@ -21,7 +24,7 @@ final class Sitemap extends CN_Singleton
 	public function addItem($entity_instance, $show_subitems=false)
 	{
 		if(!is_subclass_of($entity_instance, 'CMS_Entity'))
-			throw new CN_Exception(tr('`$entity_instance` must be valid subclass of CMS_Entity.'), E_ERROR);
+			throw new CN_Exception('`$entity_instance` must be valid subclass of CMS_Entity.', E_ERROR);
 
 		$show_subitems = $show_subitems === true ? 1 : 0;
 
@@ -66,7 +69,7 @@ SQL;
 	public function removeItem($entity_instance)
 	{
 		if(!is_subclass_of($entity_instance, 'CMS_Entity'))
-			throw new CN_Exception(tr('`$entity_instance` must be valid subclass of CMS_Entity.'), E_ERROR);
+			throw new CN_Exception('`$entity_instance` must be valid subclass of CMS_Entity.', E_ERROR);
 
 		###########################################################################################
 
@@ -121,7 +124,7 @@ SQL;
 	public function itemExists($entity_instance)
 	{
 		if(!is_subclass_of($entity_instance, 'CMS_Entity'))
-			throw new CN_Exception(tr('`$entity_instance` must be valid subclass of CMS_Entity.'), E_ERROR);
+			throw new CN_Exception('`$entity_instance` must be valid subclass of CMS_Entity.', E_ERROR);
 
 		###########################################################################################
 
@@ -186,7 +189,7 @@ SQL;
 		$new_index = $current_index - $move_by;
 
 		if($new_index > $vector->getSize() - 1 || $new_index < 0)
-			throw new CN_Exception(sprintf(tr("Can't move item out of boundry. Vector index: %1\$s, New index: %2\$s"), $vector->getSize() - 1, $new_index));
+			throw new CN_Exception(sprintf("Can't move item out of boundry. Vector index: %1\$s, New index: %2\$s", $vector->getSize() - 1, $new_index));
 
 		$vector->move($current_index, $new_index);
 
@@ -254,7 +257,7 @@ SQL;
 		$new_index = $current_index + $move_by;
 
 		if($new_index > $vector->getSize() - 1 || $new_index < 0)
-			throw new CN_Exception(sprintf(tr("Can't move item out of boundry. Vector index: %1\$s, New index: %2\$s"), $vector->getSize() - 1, $new_index));
+			throw new CN_Exception(sprintf("Can't move item out of boundry. Vector index: %1\$s, New index: %2\$s", $vector->getSize() - 1, $new_index));
 
 		$vector->move($current_index, $new_index);
 
